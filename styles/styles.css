@@ -1,0 +1,247 @@
+* {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    background: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    height: 5rem;
+    display: grid;
+    background-color: #fff;
+    place-items: center;
+}
+
+nav {
+    width: 100%;
+    /* border-radius: 25px; */
+    display: grid;
+    align-items: center;
+    transition: 1s ease;
+    position: fixed;
+    top: 0;
+    z-index: 11111;
+}
+
+nav .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-inline: 1rem; */
+    height: 6rem;
+    background-color: #fff;
+}
+
+nav .navbar-container-brand {
+    margin-left: 9rem;
+
+}
+
+nav .navbar-container-brand img {
+    width: 13rem;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav .navbar-container-links ul {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    color: #000;
+    padding: 1rem;
+}
+
+
+.first-link {
+    margin-left: 3rem;
+}
+
+
+
+nav .navbar-container-links li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: #000;
+    font-weight: 700;
+}
+
+.nav-links li a.active {
+    font-weight: 700;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+nav .navbar-container-links li button {
+    border: none;
+    background: #3DC2EC;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+
+}
+
+nav .navbar-container-links li button a {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+nav .navbar-container li button {
+
+    background-color: #3DC2EC;
+    border: none;
+    border-radius: 5px;
+}
+
+nav .navbar-container li button a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+nav .navbar-container-links li button a:hover {
+    color: #fff;
+}
+
+nav .navbar-container-links li a:hover {
+    color: #FC380E;
+}
+
+
+nav .navbar-container-hamburger-menu {
+    cursor: pointer;
+    display: none;
+}
+
+nav .navbar-container-hamburger-menu {
+    cursor: pointer;
+    display: none;
+}
+
+/* Navbar Sticky */
+nav.sticky {
+    border-radius: 0;
+    width: 100%;
+    /* height: 8rem; */
+    /* margin-top: -2.5rem; */
+}
+
+@media screen and (max-width: 1200px) {
+    nav .navbar-container-links ul {
+        gap: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1076px) {
+    nav .navbar-container-brand {
+        margin-left: 0px;
+    }
+
+    nav .navbar-container-brand img {
+        width: 9rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    nav .navbar-container-links,
+    .navbar-container-cta {
+        display: none;
+    }
+
+    header {
+        height: 8rem;
+    }
+
+    nav {
+        height: 6rem;
+        top: 1.5rem;
+        width: 90%;
+    }
+
+    nav.sticky {
+        height: 6rem;
+        margin-top: -1.5rem;
+    }
+
+    nav .navbar-container-hamburger-menu {
+        display: inline-block;
+    }
+}
+
+/* Navbar Mobiel View  */
+.navbar-mobile-container {
+    background: #ffff;
+    width: 100%;
+    position: absolute;
+    top: 6rem;
+    z-index: 9999;
+    left: 0;
+    border-radius: 15px;
+    color: #000;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.navbar-mobile-container ul {
+    padding-inline: 1rem;
+}
+
+.navbar-mobile-container ul li {
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+
+.navbar-mobile-container ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-mobile-container ul li a:hover {
+    background: #fbfbfb;
+}
+
+
+.navbar-container-hamburger-menu .bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background: black;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 100px;
+}
+
+.toggle .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.toggle .bar2 {
+    opacity: 0;
+}
+
+.toggle .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
