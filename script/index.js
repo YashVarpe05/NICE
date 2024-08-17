@@ -1,31 +1,28 @@
-// make scroll bar sticky
-window.addEventListener("scroll", () => {
-	const nav = document.querySelector("nav");
-	nav.classList.toggle("sticky", window.scrollY > 0);
-});
+document
+	.getElementById("contact-form")
+	.addEventListener("submit", function (e) {
+		e.preventDefault(); // Prevent default form submission
 
-// set active page indicator
-(() => {
-	const activePage = window.location.pathname.replace("/pages", "");
-	const navLinks = document.querySelectorAll(".nav-links ul li a");
-	for (let i = 0; i < navLinks.length; i++) {
-		const link = navLinks[i];
-		if (link.href.replace(window.location.origin, "") == activePage) {
-			link.classList.add("active");
-		} else if (
-			link.href.replace(window.location.origin + "/pages", "") == activePage
-		) {
-			link.classList.add("active");
-		}
-	}
-})();
+		const form = e.target;
+		const formData = new FormData(form);
 
-// toggle nav menu
-(() => {
-	const menuIcon = document.querySelector(".navbar-container-hamburger-menu");
-	const container = document.querySelector(".navbar-mobile-container");
-	menuIcon.addEventListener("click", () => {
-		menuIcon.classList.toggle("toggle");
-		container.classList.toggle("show");
+		fetch(form.action, {
+			method: "POST",
+			body: formData,
+		})
+			.then((response) => response.json())
+			.then((data) => {
+				if (data.result === "success") {
+					alert("Your message has been successfully submitted!");
+					form.reset(); // Reset the form after successful submission
+				} else {
+					alert(
+						"There was an error submitting your message. Please try again."
+					);
+				}
+			})
+			.catch((error) => {
+				alert("There was an error submitting your message. Please try again.");
+				console.error("Error:", error);
+			});
 	});
-})();

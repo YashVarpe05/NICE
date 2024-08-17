@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE Art Media</title>
 </head>
 
-<body><!-- Navbar  -->
+<body>
     <header>
         <nav>
             <div class="navbar-container">
 
                 <div class="navbar-container-brand">
-                    <img src="../assets/nice media logo.png" alt="">
+                    <img src="../assets/nice media logo.png" alt="The Code Sage">
                 </div>
 
                 <div class="navbar-container-links nav-links">
@@ -77,7 +82,44 @@
 
         </nav>
     </header>
-    <!-- <h1>blogs</h1> -->
+    <section id="hero">
+        <div class="hero1">
+            <h1> <span>Elevate</span> with </h1>
+            <h3>Nice Art Media</h3>
+            <h2>Your Brand, Our expertise</h1>
+        </div>
+        <div class="hero2">
+            <img src="../assets/Group 1000003825.png" alt="">
+        </div>
+
+    </section>
+    <section id="contact-us">
+        <div class="contact-form">
+            <h2>Contact us</h2>
+            <form id="contact-form" method="POST"
+                action="https://script.google.com/macros/s/AKfycbyxnI6h0ewvO8jkT5pApps0amZGpyr5ULrz4oXRhQfUuSVPxOqw73yUp5KwZWWgMt_d/exec">
+                <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter your subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Leave a message" required></textarea>
+                </div>
+                <button type="submit">Send message</button>
+            </form>
+
+
+        </div>
+    </section>
     <footer class="footer">
         <div class="container">
             <div class="footer-columns">
@@ -133,6 +175,7 @@
             <p>&copy;2024, All rights reserved Nice Art Media.</p>
         </div>
     </footer>
+
 </body>
 <script src="./script/navbar.js" defer></script>
 <script src="./script/index.js" defer></script>

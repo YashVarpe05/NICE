@@ -294,18 +294,19 @@
         <section id="contact-us">
             <div class="contact-form">
                 <h2>Contact us</h2>
-                <form>
+                <form id="contact-form" method="POST"
+                    action="https://script.google.com/macros/s/AKfycbyxnI6h0ewvO8jkT5pApps0amZGpyr5ULrz4oXRhQfUuSVPxOqw73yUp5KwZWWgMt_d/exec">
+                    <div class="form-group">
+                        <label for="subject">Name:</label>
+                        <input type="text" id="subject" name="name" placeholder="Enter your Name" required>
+                    </div>
                     <div class="form-group">
                         <label for="email">Email ID:</label>
                         <input type="email" id="email" name="email" placeholder="Enter your mail" required>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" placeholder="Enter your subject" required>
+                        <input type="tel" id="phone" name="contact" placeholder="Enter your contact number" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
@@ -313,10 +314,9 @@
                     </div>
                     <button type="submit">Send message</button>
                 </form>
-
-
             </div>
         </section>
+
 
         <footer class="footer">
             <div class="container">
@@ -379,6 +379,7 @@
 
 
 </body>
-<script src="./script/index.js" defer></script>
+<script src="./script/navbar.js" defer></script>
+<script type="module" src="./script/index.js"></script>
 
 </html>
