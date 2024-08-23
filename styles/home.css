@@ -92,7 +92,6 @@
 }
 
 
-
 #about .background {
     width: 90%;
     height: 30%;
@@ -696,11 +695,6 @@ textarea {
         margin-left: 4.5rem
     }
 
-
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
     .footer-columns {
         flex-direction: column;
     }
@@ -712,10 +706,73 @@ textarea {
     .footer .subscribe-form input[type="email"] {
         width: 100%;
     }
+
+    #services .service-card .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #moving-div .move img {
+        height: 25vw;
+    }
+
+    #services .services-title h1,
+    #services .services-title h1 span,
+    #branding .branding-title h1,
+    #branding .branding-title h1 span,
+    #branding .branding-showcase h2,
+    #branding .branding-showcase h1 {
+        font-size: 1.5rem;
+    }
+
+    #about .about-title h1 {
+        font-size: 2rem;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #hero .hero1 h1 {
+        font-size: 2.1rem;
+        line-height: 2.2rem;
+        /* Slightly smaller for mobile */
+    }
+
+    #about .about-info {
+        padding: 0 4rem;
+    }
+
+    #about .about-info p {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    #hero .hero1 h3 {
+        line-height: 2rem;
+        font-size: 1.2em;
+        /* Slightly smaller for mobile */
+    }
+
+    #hero .hero1 h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .hero1 {
+        transform: none;
+    }
+
+    .hero2 img {
+        content: url(../assets/Group\ 1000003833.webp);
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
-
-/* Responsive Design */
 @media (max-width: 1024px) {
     #branding .branding-showcase-cards {
         flex-direction: column;
@@ -758,6 +815,10 @@ textarea {
     #branding .card .card-content img {
         margin-right: 2.5rem;
     }
+
+    #services .service-card .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
@@ -775,35 +836,6 @@ textarea {
 
 
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-    #services .service-card .card-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    #services .service-card .card-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #moving-div .move img {
-        height: 25vw;
-    }
-
-    #services .services-title h1,
-    #services .services-title h1 span,
-    #branding .branding-title h1,
-    #branding .branding-title h1 span,
-    #branding .branding-showcase h2,
-    #branding .branding-showcase h1 {
-        font-size: 1.5rem;
-    }
-
-    #about .about-title h1 {
-        font-size: 2rem;
-    }
-}
 
 @media (max-width: 480px) {
     #services .service-card .card-grid {
@@ -833,8 +865,6 @@ textarea {
     #hero .hero1 h3 {
         font-size: 1.5rem;
     }
-
-
 
 }
 
@@ -877,64 +907,16 @@ textarea {
     }
 }
 
-@media (max-width: 768px) {
-    #hero {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #hero .hero1 h1 {
-        font-size: 2.1rem;
-        line-height: 2.2rem;
-        /* Slightly smaller for mobile */
-    }
-
-    #about .about-info {
-        padding: 0 4rem;
-    }
-
-    #about .about-info p {
-        padding: 0;
-        font-size: 1rem;
-    }
-
-    #hero .hero1 h3 {
-        line-height: 2rem;
-        font-size: 1.2em;
-        /* Slightly smaller for mobile */
-    }
-
-    #hero .hero1 h2 {
-        font-size: 1.5rem;
-        text-align: center;
-        line-height: 2rem;
-    }
-
-    .hero1 {
-        transform: none;
-    }
-
-    .hero2 img {
-        content: url(../assets/Group\ 1000003833.png);
-        width: 80%;
-        /* Reduce width for mobile */
-        margin: 0 auto;
-    }
-}
 
 @media (max-width:582px) {
     #hero .hero1 h1 {
         font-size: 1.5rem;
         line-height: 1.8rem;
-        /* Slightly smaller for mobile */
     }
 
     #hero .hero1 h3 {
         line-height: 1.5rem;
         font-size: 1em;
-        /* Slightly smaller for mobile */
     }
 
     #hero .hero1 h2 {
@@ -951,8 +933,6 @@ textarea {
         content: url(../assets/Group\ 1000003833.png);
         width: 100%;
         height: 50%;
-        /* object-finherit;t: inherit; */
-        /* Reduce width for mobile */
         margin: 0 auto;
     }
 

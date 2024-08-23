@@ -6,7 +6,7 @@
 
 /* Background styling */
 .about-container {
-    background-image: url('../assets/about-us.avif');
+    background-image: url('../assets/about-us.webp');
     background-size: cover;
     background-position: center;
     padding: 5rem;
@@ -31,22 +31,18 @@
 
 .mission {
     margin-top: 6.25rem;
-    /* 100px */
     transform: translateX(-35%);
 }
 
 .vision {
     margin-top: 6.25rem;
-    /* 100px */
     margin-bottom: 3.125rem;
-    /* 50px */
     transform: translateX(20%);
 }
 
 .about-main .about-container h2 {
     color: #FF6F00;
     font-size: 2.5rem;
-    /* 40px */
     font-weight: bold;
     line-height: 1rem;
     margin-bottom: 1rem;
@@ -55,12 +51,10 @@
 .about-main .about-container p {
     text-align: justify;
     font-size: 1.1rem;
-    /* 17.6px */
     color: #555;
     margin-bottom: 1.5rem;
 }
 
-/* Icon styling */
 .icon {
     position: absolute;
     top: 70%;
@@ -78,7 +72,6 @@
     width: 20%;
 }
 
-/* Team Container */
 .team-container-title {
     text-align: center;
     margin-top: 4rem;
@@ -94,9 +87,8 @@
     padding: 2rem;
 }
 
-/* Team Card Styling */
 .team-container .team-card {
-    background: #f2f3f7;
+    background: #fbfbfb;
     box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
     border-radius: 20px;
     padding: 40px 20px;
@@ -165,11 +157,9 @@
 }
 
 
-/* Responsive Design */
 
 @media (max-width: 1024px) {
 
-    /* 2 cards per row on tablets */
     .team-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -215,68 +205,7 @@
     .team-container .sci a {
         font-size: 16px;
     }
-}
 
-@media (max-width: 480px) {
-
-    /* 1 card per row on mobile portrait */
-    .team-container {
-        grid-template-columns: 1fr;
-    }
-
-    .team-container .imgBx {
-        width: 80px;
-        height: 80px;
-    }
-
-    .team-container .contentBx h4 {
-        font-size: 1.1rem;
-    }
-
-    .team-container .contentBx h5 {
-        font-size: 0.75rem;
-    }
-
-    .team-container .sci a {
-        font-size: 14px;
-    }
-}
-
-/* Responsive Design */
-
-@media (max-width: 1200px) {
-
-    /* Adjust for large tablets and small laptops */
-    .container {
-        padding: 3rem;
-    }
-
-    .card {
-        padding: 3%;
-        max-width: 80%;
-    }
-
-    .mission,
-    .vision {
-        transform: translateX(0);
-    }
-
-    h2 {
-        font-size: 2.2rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .icon img {
-        width: 15%;
-    }
-}
-
-@media (max-width: 768px) {
-
-    /* Tablet Portrait Size */
     .container {
         padding: 2rem;
     }
@@ -307,7 +236,28 @@
 
 @media (max-width: 480px) {
 
-    /* Mobile Phone Size */
+    /* 1 card per row on mobile portrait */
+    .team-container {
+        grid-template-columns: 1fr;
+    }
+
+    .team-container .imgBx {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-container .contentBx h4 {
+        font-size: 1.1rem;
+    }
+
+    .team-container .contentBx h5 {
+        font-size: 0.75rem;
+    }
+
+    .team-container .sci a {
+        font-size: 14px;
+    }
+
     .container {
         padding: 1rem;
     }
@@ -316,7 +266,6 @@
         padding: 1.5rem;
         max-width: 100%;
         border-radius: 2rem;
-        /* Reduce border radius for smaller screens */
     }
 
     .target-icon img {
@@ -342,5 +291,35 @@
 
     .icon img {
         width: 25%;
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    .container {
+        padding: 3rem;
+    }
+
+    .card {
+        padding: 3%;
+        max-width: 80%;
+    }
+
+    .mission,
+    .vision {
+        transform: translateX(0);
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .icon img {
+        width: 15%;
     }
 }
