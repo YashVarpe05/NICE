@@ -145,7 +145,7 @@
 #services .service-card .card-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 50px;
     padding: 20px;
 }
 
@@ -523,26 +523,6 @@ textarea {
     /* Center button on small screens */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    #contact-us h2 {
-        font-size: 1.5rem;
-    }
-
-    .contact-form {
-        width: 60%;
-    }
-
-    #contact-us input,
-    textarea {
-        width: 100%;
-    }
-
-    #contact-us button {
-        max-width: 100%;
-        width: auto;
-    }
-}
 
 @media (max-width: 480px) {
     #contact-us h2 {
@@ -770,6 +750,24 @@ textarea {
         content: url(../assets/Group\ 1000003833.webp);
         width: 80%;
         margin: 0 auto;
+    }
+
+    #contact-us h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form {
+        width: 60%;
+    }
+
+    #contact-us input,
+    textarea {
+        width: 100%;
+    }
+
+    #contact-us button {
+        max-width: 100%;
+        width: auto;
     }
 }
 
