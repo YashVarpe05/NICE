@@ -265,6 +265,14 @@ nav .navbar-container-links ul li.dropdown:hover .dropdown-arrow {
     .navbar-mobile-container.show {
         display: flex;
     }
+
+    nav .navbar-container-brand img {
+        width: 5rem;
+    }
+
+    nav .navbar-container {
+        height: 4rem;
+    }
 }
 
 .toggle .bar1 {

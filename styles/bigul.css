@@ -7,7 +7,6 @@
 .bigul-container .bigul-headline {
     max-width: 1220px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .bigul-container .bigul-headline .bigul-img img {
@@ -21,7 +20,7 @@
     width: 80%;
     text-align: justify;
     transform: translateX(15%);
-    margin-top: -3.5rem;
+    padding: 0;
 }
 
 .bigul-container .bigul-headline .bigul-info p {
@@ -113,6 +112,10 @@ button.submit-btn:hover {
 }
 
 .cards {
+    border-top: 1px solid #d3d3d39a;
+}
+
+.cards {
     margin: 0 auto;
 }
 
@@ -120,11 +123,25 @@ button.submit-btn:hover {
     text-align: center;
 }
 
+.cards .card-headline h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FC380E;
+}
+
+.card .card-headline h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: #FC380E;
+}
+
 .wrapper {
     max-width: 1100px;
     width: 100%;
     position: relative;
     margin: 0 auto;
+    margin-top: 1.5rem;
 }
 
 .wrapper i {
@@ -136,7 +153,7 @@ button.submit-btn:hover {
     position: absolute;
     text-align: center;
     line-height: 50px;
-    background: #ebebeb;
+    background: #f8f8f8;
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translateY(-50%);
@@ -195,7 +212,7 @@ button.submit-btn:hover {
     scroll-snap-align: start;
     height: 342px;
     list-style: none;
-    background: #eae9e9;
+    background: #f7f7f7;
     cursor: pointer;
     padding-bottom: 15px;
     flex-direction: column;
@@ -239,6 +256,23 @@ button.submit-btn:hover {
         grid-auto-columns: calc((100% / 2) - 0px);
         /* Display 2 cards at a time */
     }
+
+    .bigul-container .bigul-headline .bigul-info p {
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+
+    .cards .card-headline h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #FC380E;
+    }
+
+    .card .card-headline h3 {
+        font-weight: 700;
+        line-height: 1rem;
+        color: #FC380E;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -277,6 +311,12 @@ button.submit-btn:hover {
     .card .img img {
         width: 112px;
         height: 112px;
+    }
+
+    .bigul-container .bigul-headline .bigul-info p {
+        font-size: 1rem;
+        line-height: 1;
+        text-wrap: wrap;
     }
 }
 

@@ -64,3 +64,10 @@
 #services .service-card .card-grid .card .read-more:hover {
     background-color: #f97316;
 }
+
+@media screen and (max-width: 768px) {
+    #services .service-card .card-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
