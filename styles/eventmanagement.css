@@ -1,0 +1,142 @@
+body {
+    width: 100%;
+    height: auto;
+}
+
+.service {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 1220px;
+    margin: 1.5rem auto;
+}
+
+
+
+
+.services-headline h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    line-height: .2rem;
+    color: #282828c5;
+}
+
+.services-headline h1:nth-child(2) {
+    color: #FF5733;
+}
+
+.services-headline h1 {
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    line-height: 1rem;
+}
+
+.services-headline p {
+    font-size: 1.2rem;
+    color: #1c1a1a;
+    text-align: justify;
+    padding-right: 21rem;
+}
+
+.services-headline button {
+    width: 12rem;
+    height: 4rem;
+    border: none;
+    font-weight: 700;
+    background-color: #FF5733;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.services-headline button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.service .services-img {
+    margin-top: 3rem;
+}
+
+.service .services-img img:nth-child(1) {
+    width: 160%;
+    height: 90%;
+    transform: translateX(-50%);
+}
+
+.service .services-img img:nth-child(2) {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 75%;
+    right: 12%;
+
+}
+
+
+@media (max-width: 1000px) {
+    .service {
+        flex-direction: column;
+    }
+
+    .services-headline {
+        padding: 0;
+        text-align: center;
+    }
+
+    .services-headline h3 {
+        font-size: 1rem;
+    }
+
+    .services-headline h1 {
+        font-size: 2rem;
+    }
+
+    .services-headline p {
+        padding: 3rem;
+        margin-top: -2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .services-headline button {
+        width: 8rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    .service .services-img img:nth-child(1) {
+        margin: 0;
+        width: 50%;
+        height: 50%;
+        padding: 0;
+        transform: translateX(50%);
+    }
+
+    .service .services-img img:nth-child(2) {
+        right: 40%;
+        top: 93%;
+        width: 7%;
+        height: 7%;
+    }
+}
+
+@media (max-width: 763px) {
+    .service .services-img img:nth-child(1) {
+        width: 50%;
+        height: auto;
+    }
+
+    .service .services-headline p {
+        font-size: .8rem;
+        text-align: justify;
+    }
+
+    .service .services-img img:nth-child(2) {
+        display: none;
+    }
+}

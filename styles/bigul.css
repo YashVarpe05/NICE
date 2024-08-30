@@ -1,0 +1,316 @@
+/* Container Styles */
+.bigul-container {
+    width: 100%;
+    height: 100%;
+}
+
+.bigul-container .bigul-headline {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bigul-container .bigul-headline .bigul-img img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    transform: translateX(30%);
+}
+
+.bigul-container .bigul-headline .bigul-info {
+    width: 80%;
+    text-align: justify;
+    transform: translateX(15%);
+    margin-top: -3.5rem;
+}
+
+.bigul-container .bigul-headline .bigul-info p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/* Download Button Styles */
+.custom-download-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #FC380E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.custom-download-btn:hover {
+    background-color: #FC380E;
+}
+
+/* Modal Styles for Contact Form */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button.submit-btn {
+    background-color: #FC380E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button.submit-btn:hover {
+    background-color: #FC380E;
+}
+
+.cards {
+    margin: 0 auto;
+}
+
+.cards .card-headline {
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #ebebeb;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child {
+    left: 17px;
+}
+
+.wrapper i:last-child {
+    right: 17px;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 0px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: #eae9e9;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.carousel .card .img {
+    background: #8B53FF;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+}
+
+.card .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+
+.carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+    text-align: center;
+}
+
+.carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+
+/* General Styling remains the same */
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 0px);
+        /* Display 2 cards at a time */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc(50% - 0px);
+        /* Adjust the size to fit 2 smaller cards */
+        gap: 8px;
+        /* Adjust the gap between cards */
+    }
+
+    .wrapper i {
+        height: 40px;
+        width: 40px;
+        font-size: 1rem;
+        line-height: 40px;
+    }
+
+    .carousel .card h2 {
+        font-size: 1.3rem;
+        margin: 20px 0 5px;
+    }
+
+    .carousel .card span {
+        font-size: 1.1rem;
+    }
+
+    .carousel .card {
+        height: 242px;
+    }
+
+    .carousel .card .img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .card .img img {
+        width: 112px;
+        height: 112px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc(50% - 8px);
+        /* Continue showing 2 smaller cards */
+        gap: 8px;
+        /* Reduce gap for small screens */
+    }
+
+    .wrapper i {
+        height: 35px;
+        width: 35px;
+        font-size: 0.9rem;
+        line-height: 35px;
+    }
+
+    .carousel .card h2 {
+        font-size: 1.2rem;
+        margin: 15px 0 5px;
+    }
+
+    .carousel .card span {
+        font-size: 1rem;
+    }
+
+    .carousel .card .img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .card .img img {
+        width: 92px;
+        height: 92px;
+    }
+}

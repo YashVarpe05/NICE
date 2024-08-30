@@ -1,5 +1,23 @@
 * {
     font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue';
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.3rem
+    }
+
+
 }
 
 body {
@@ -30,12 +48,12 @@ nav .navbar-container {
     align-items: center;
     justify-content: space-between;
     padding: 0 1.5rem;
-    height: 5.5rem;
+    height: 5rem;
     background-color: #fff;
 }
 
 nav .navbar-container-brand img {
-    width: 9rem;
+    width: 7rem;
     object-fit: cover;
     display: flex;
     align-items: center;
@@ -64,28 +82,123 @@ nav .navbar-container-links li a {
 }
 
 nav .navbar-container-links li a.active {
-    color: #6c5ce7;
+    color: #ff7518;
     font-weight: 700;
-    border-bottom: 2px solid #6c5ce7;
+    border-bottom: 2px solid #ec5800;
     padding-bottom: 4px;
 }
 
+
+
 nav .navbar-container-cta button {
-    background-color: #6c5ce7;
+    background-color: #ff7518;
     border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    padding: .4rem 1rem;
 }
 
-nav .navbar-container-cta button a {
-    color: #fff;
-    font-size: 1rem;
+.bigul-button {
+    display: flex;
+    align-items: center;
+    background-color: #f97316;
+    /* Orange color */
+    color: white;
+    font-weight: bold;
+    flex-direction: column;
+    /* Fully rounded corners */
     text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.bigul-button .main-text {
+    font-size: 1.125rem;
+    /* 18px */
+}
+
+.bigul-button .sub-text {
+    font-size: 0.75rem;
+    /* 12px */
+    margin-left: 8px;
+}
+
+/* nav .navbar-container-cta button a {
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+} */
+
+/* nav .navbar-container-cta button a span {
+    font-size: 1rem;
+} */
+/* Position the dropdown container relative to the parent */
+nav .navbar-container-links ul li.dropdown {
+    position: relative;
+}
+
+/* Initially hide the dropdown menu */
+nav .navbar-container-links ul li .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 1rem 0;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+nav .navbar-container-links ul li .dropdown-menu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: .1rem;
+}
+
+nav .navbar-container-links ul li .dropdown-menu li a {
+    font-size: 1rem;
+    padding: 0.1rem 1rem;
+    color: #555;
+    text-decoration: none;
+    text-wrap: nowrap;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Show the dropdown menu on hover with smooth animation */
+nav .navbar-container-links ul li.dropdown:hover .dropdown-menu {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 nav .navbar-container-hamburger-menu {
     display: none;
     cursor: pointer;
+}
+
+/* Add a Font Awesome arrow to indicate a dropdown */
+nav .navbar-container-links ul li a .dropdown-arrow {
+    display: inline-block;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+    font-size: 0.75rem;
+    /* Adjust the size of the arrow icon */
+    color: #555;
+    /* Arrow color */
+}
+
+/* Rotate the Font Awesome arrow when the dropdown is active */
+nav .navbar-container-links ul li.dropdown:hover .dropdown-arrow {
+    transform: rotate(-180deg);
 }
 
 .navbar-container-hamburger-menu .bar1,
@@ -128,6 +241,14 @@ nav .navbar-container-hamburger-menu {
     text-decoration: none;
 }
 
+@media screen and (max-width:1024px) {
+    nav .navbar-container-links li a {
+        text-wrap: nowrap;
+        font-size: 1rem;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     nav .navbar-container-links {
         display: none;
@@ -156,4 +277,32 @@ nav .navbar-container-hamburger-menu {
 
 .toggle .bar3 {
     transform: translate(0, -8px) rotate(45deg);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
 }

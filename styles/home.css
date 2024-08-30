@@ -5,6 +5,7 @@
     overflow: hidden;
 }
 
+
 #hero {
     display: flex;
     justify-content: space-between;
@@ -14,23 +15,23 @@
             rgba(255, 183, 96, 0.43) 100%);
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
 }
 
 
 .hero1 {
-    max-width: 50%;
+    max-width: 1220px;
     transform: translateX(20%);
     line-height: 4rem;
 }
 
 .hero1 h1 {
-    font-size: 4.5em;
+    font-size: 3rem;
     color: #000;
 }
 
 .hero1 h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 .hero1 h1 span {
@@ -38,9 +39,10 @@
 }
 
 .hero1 h3 {
-    font-size: 2em;
+    font-size: 1.5rem;
     margin: -10px 0;
     color: #000;
+    font-weight: 500;
     line-height: 1.2rem;
 }
 
@@ -53,15 +55,18 @@
 .hero2 img {
     width: 100%;
     height: 100%;
+    max-width: 1220px;
 
 }
 
 #about {
     width: 100%;
-    height: 70vh;
-    margin-top: 5rem;
+    height: auto;
+    margin-top: 1.5rem;
     background: #fff;
-
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 #about .about-title h1 {
@@ -88,6 +93,7 @@
     z-index: 11;
     margin-top: 8%;
     position: relative;
+    max-width: 1220px;
 
 }
 
@@ -98,7 +104,8 @@
     border-radius: 10rem 0 0 10rem;
     position: absolute;
     background-color: #f3f3f3;
-    left: 10%;
+    max-width: 1220px;
+    max-height: fit-content;
 }
 
 
@@ -107,7 +114,6 @@
     font-size: 1.2rem;
     text-align: justify;
     color: #000;
-    padding-left: 5rem;
 }
 
 
@@ -123,70 +129,7 @@
     object-fit: cover;
 }
 
-#services {
-    width: 100%;
-    height: 100%;
-    margin-top: 10rem;
-}
 
-#services .services-title h1 {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 3rem;
-}
-
-#services .services-title h1 span {
-    font-size: 2rem;
-    font-weight: 700;
-
-}
-
-#services .service-card .card-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-    padding: 20px;
-}
-
-#services .service-card .card-grid .card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-#services .service-card .card-grid .card:hover {
-    transform: translateY(-5px);
-}
-
-#services .service-card .card-grid .card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-}
-
-#services .service-card .card-grid .card p {
-    padding: 15px;
-    color: #333;
-}
-
-#services .service-card .card-grid .card .read-more {
-    background-color: #007BFF;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    padding: 10px 15px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#services .service-card .card-grid .card .read-more:hover {
-    background-color: #0056b3;
-}
 
 #branding {
     width: 100%;
@@ -197,7 +140,7 @@
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 5rem;
+    margin-bottom: 1.5rem;
 }
 
 #branding .branding-title h1 span {
@@ -206,15 +149,13 @@
 }
 
 #moving-div {
-    /* background-color: red; */
-    margin-top: 10vh;
+    margin-top: 1.5rem;
     position: relative;
-    bottom: 3%;
     white-space: nowrap;
-    padding: 1.2vw;
     overflow: hidden;
     width: 100%;
-
+    max-width: fit-content;
+    margin: 0 auto;
 }
 
 #moving-div .move {
@@ -226,13 +167,112 @@
 }
 
 #moving-div .move img {
-    height: 15vw;
+    height: 10vw;
+    cursor: pointer;
     margin: 0 1.2vw;
     padding: 3rem;
+    filter: grayscale(100%);
+    /* Apply grayscale filter */
+    transition: filter 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+#moving-div .move img:hover {
+    filter: grayscale(0%);
+    /* Remove grayscale on hover */
+}
+
+.branding {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 1.5rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-column,
+.right-column {
+    width: 30%;
+}
+
+.service-box {
+    border-radius: 0 4rem 4rem 0rem;
+}
+
+.right {
+    border-radius: 4rem 0 0 4rem;
+}
+
+.center-image {
+    width: 40%;
+    text-align: center;
+}
+
+.center-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service-box {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 14px;
+    color: #555;
+    text-align: justify;
+}
+
+.service-box:hover {
+    background-color: #FC3A0F;
+    color: #fff;
+}
+
+.service .content .service-box img {
+    width: 20%;
+    height: 20%;
+    padding: 20px;
+}
+
+.service-box {
+    display: flex;
+    align-items: center;
+}
+
+.service-box.highlighted p {
+    color: #fff;
+}
+
+/* Keyframes for animation */
+@keyframes mobe {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 #branding .branding-showcase {
-    margin-top: 8rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
@@ -261,8 +301,8 @@
     object-fit: cover;
     position: absolute;
     z-index: -1;
-    top: -120px;
-    left: -64px;
+    top: -20px;
+    left: -152px;
 }
 
 
@@ -270,10 +310,9 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px;
     gap: 20px;
     position: relative;
-    margin-top: 7rem;
+    margin-top: 1.5rem;
 }
 
 #branding .card {
@@ -351,7 +390,7 @@
     width: 65px;
     height: 65px;
     object-fit: cover;
-    margin-top: 1.6rem;
+    margin-top: 1.5rem;
 }
 
 #branding .event-card .card-content h3,
@@ -380,7 +419,7 @@
     /* circle */
     background-color: #FFDE6A;
     height: 300px;
-    width: 280px;
+    width: 300px;
     position: absolute;
     transform: translateX(240%);
     top: 100px;
@@ -390,22 +429,34 @@
 #contact-us {
     width: 100%;
     height: 100%;
-    margin-top: 10rem;
+    margin-top: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.service {
+    background-color: #fff7f7af;
+}
+
+.service .service-headline {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.service .service-headline h1 {
+    color: #ff4c24e5;
 }
 
 .services-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5rem 9rem;
-    background-color: #f8f9fa;
+    padding: 1.5rem 9rem;
 }
 
 .services-content {
-    max-width: 50%;
+    max-width: 1220px;
 }
 
 .services-content h3 {
@@ -461,81 +512,12 @@
 .services-images .main-image {
     width: 70%;
     margin-left: 10rem;
+    max-width: 1220px;
 }
 
-
-.contact-form {
-    background-color: #FF6600;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 700px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-    /* Center the form */
-}
-
-#contact-us h2 {
-    text-align: center;
-    color: #fff;
-    font-size: 1.8rem;
-}
-
-#contact-us .form-group {
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-#contact-us label {
-    display: block;
-    margin-bottom: 5px;
-    color: #fff;
-    font-size: 1rem;
-}
-
-#contact-us input,
-textarea {
-    width: 20rem;
-    max-width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-#contact-us button {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    font-weight: 700;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    max-width: 150px;
-    /* Limit the width of the button */
-    margin-top: 10px;
-    align-self: center;
-    /* Center button on small screens */
-}
-
-
-@media (max-width: 480px) {
-    #contact-us h2 {
-        font-size: 1.2rem;
-    }
-
-    .contact-form {
-        padding: 15px;
-    }
-}
 
 .footer {
-    margin-top: 5rem;
+    margin-top: 1.5rem;
     border-top: 1px solid #d1d1d16f;
     background-color: #fffdfd;
     color: #000;
@@ -633,7 +615,7 @@ textarea {
     padding: 10px 20px;
     border: none;
     margin-top: 1rem;
-    background-color: #5A67D8;
+    background-color: #FC380E;
     color: #fff;
     border-radius: 20px;
     cursor: pointer;
@@ -646,7 +628,166 @@ textarea {
     color: #aaa;
 }
 
-/* Responsive Design */
+@keyframes mobe {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+@media (max-width: 1377px) {
+    #about .background {
+        height: 25%;
+
+    }
+
+    #hero .hero1 h1 {
+        font-size: 3rem;
+    }
+
+    #hero .hero1 h2 {
+        font-size: 2rem;
+    }
+
+    #hero .hero1 h3 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    #branding .branding-showcase-cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #branding .card {
+        width: 80%;
+        margin: 10px 0;
+        transform: rotate(0deg);
+        /* Reset rotation on mobile */
+    }
+
+    #branding .card .card-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #branding .branding-showcase .branding-showcase-cards .line-img,
+    .left-side-bg,
+    .right-side-bg {
+        display: none;
+    }
+
+    #branding .branding-showcase .branding-showcase-cards .event-card img,
+    #branding .branding-showcase .branding-showcase-cards .digital-marketing-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #branding .branding-showcase .branding-showcase-cards .event-management,
+    #branding .branding-showcase .branding-showcase-cards .digital-marketing {
+        width: 80%;
+        height: 80%;
+    }
+
+    #branding .card .card-content img {
+        margin-right: 2.5rem;
+    }
+
+    #services .service-card .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #about .about-info p {
+        font-size: .9rem;
+    }
+
+    #services .service-card .card-grid .card {
+        height: 500px;
+    }
+}
+
+@media (max-width:1000px) {
+
+    #about .about-info {
+        flex-direction: column;
+    }
+
+    #about .about-info .about-niceLogo img {
+        position: relative;
+        z-index: unset;
+    }
+
+    #about .about-info .about-niceLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about .about-info .about-niceLogo img {
+        width: 40%;
+        height: 40%;
+    }
+
+    #about .about-info .background {
+        display: none;
+    }
+
+    #about .about-info p {
+        padding: 0;
+    }
+
+    #about .about-info p {
+        font-size: .9rem;
+    }
+}
+
+/* Media Query for Tablet Screens */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .center-image {
+        display: none;
+    }
+
+    .left-column,
+    .right-column {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .service-box {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .service-box {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
 @media (max-width: 768px) {
     .services-section {
         flex-direction: column;
@@ -769,73 +910,25 @@ textarea {
         max-width: 100%;
         width: auto;
     }
-}
 
-@media (max-width: 1024px) {
-    #branding .branding-showcase-cards {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    #about {
+        padding: 0px;
     }
 
-    #branding .card {
-        width: 80%;
-        margin: 10px 0;
-        transform: rotate(0deg);
-        /* Reset rotation on mobile */
-    }
-
-    #branding .card .card-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    #branding .branding-showcase .branding-showcase-cards .line-img,
-    .left-side-bg,
-    .right-side-bg {
-        display: none;
-    }
-
-    #branding .branding-showcase .branding-showcase-cards .event-card img,
-    #branding .branding-showcase .branding-showcase-cards .digital-marketing-card img {
-        width: 100px;
-        height: 100px;
-    }
-
-    #branding .branding-showcase .branding-showcase-cards .event-management,
-    #branding .branding-showcase .branding-showcase-cards .digital-marketing {
-        width: 80%;
-        height: 80%;
-    }
-
-    #branding .card .card-content img {
-        margin-right: 2.5rem;
-    }
-
-    #services .service-card .card-grid {
-        grid-template-columns: repeat(3, 1fr);
+    #about .about-info {
+        padding: 0 1rem;
     }
 }
-
-
-
-@keyframes mobe {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-
-}
-
-
-
 
 @media (max-width: 480px) {
+    #contact-us h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
     #services .service-card .card-grid {
         grid-template-columns: 1fr;
     }
@@ -844,67 +937,6 @@ textarea {
         margin-bottom: 20px;
     }
 }
-
-
-@media (max-width: 1377px) {
-    #about .background {
-        height: 25%;
-
-    }
-
-    #hero .hero1 h1 {
-        font-size: 3rem;
-    }
-
-    #hero .hero1 h2 {
-        font-size: 2rem;
-    }
-
-    #hero .hero1 h3 {
-        font-size: 1.5rem;
-    }
-
-}
-
-
-
-@media (max-width:1080px) {
-    #about .about-info p {
-        font-size: .9rem;
-    }
-}
-
-@media (max-width:1000px) {
-
-    #about .about-info {
-        flex-direction: column;
-    }
-
-    #about .about-info .about-niceLogo img {
-        position: relative;
-        z-index: unset;
-    }
-
-    #about .about-info .about-niceLogo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #about .about-info .about-niceLogo img {
-        width: 40%;
-        height: 40%;
-    }
-
-    #about .about-info .background {
-        display: none;
-    }
-
-    #about .about-info p {
-        padding: 0;
-    }
-}
-
 
 @media (max-width:582px) {
     #hero .hero1 h1 {
@@ -934,4 +966,19 @@ textarea {
         margin: 0 auto;
     }
 
+}
+
+/* i want to set the this type of widht and height to 2645 px to 1377px */
+@media (min-width:1377px) {
+    #about .background {
+        width: 100%;
+        height: 25%;
+    }
+}
+
+@media (min-width:2560px) {
+    #about .background {
+        width: 100%;
+        height: 14%;
+    }
 }
