@@ -139,4 +139,12 @@ body {
     .service .services-img img:nth-child(2) {
         display: none;
     }
+
+    .services-headline h3 {
+        font-size: 1.2rem;
+    }
+
+    .services-headline h1 {
+        font-size: 1.5rem;
+    }
 }

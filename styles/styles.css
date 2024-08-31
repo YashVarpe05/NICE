@@ -1,5 +1,5 @@
 * {
-    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue';
+    font-family: "Poppins", system-ui;
 
     h1 {
         font-size: 3rem;
@@ -14,7 +14,7 @@
     }
 
     p {
-        font-size: 1.3rem
+        font-size: 1.2rem
     }
 
 
@@ -84,7 +84,7 @@ nav .navbar-container-links li a {
 nav .navbar-container-links li a.active {
     color: #ff7518;
     font-weight: 700;
-    border-bottom: 2px solid #ec5800;
+
     padding-bottom: 4px;
 }
 
@@ -241,6 +241,47 @@ nav .navbar-container-links ul li.dropdown:hover .dropdown-arrow {
     text-decoration: none;
 }
 
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-button img:hover {
+    transform: scale(1.1);
+}
+
+.call-button {
+    position: fixed;
+    bottom: 100px;
+    /* Adjust the position if needed */
+    right: 20px;
+    z-index: 1000;
+}
+
+.call-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.call-button img:hover {
+    transform: scale(1.1);
+}
+
 @media screen and (max-width:1024px) {
     nav .navbar-container-links li a {
         text-wrap: nowrap;
@@ -273,44 +314,50 @@ nav .navbar-container-links ul li.dropdown:hover .dropdown-arrow {
     nav .navbar-container {
         height: 4rem;
     }
-}
 
-.toggle .bar1 {
-    transform: translate(0, 8px) rotate(-45deg);
-}
-
-.toggle .bar2 {
-    opacity: 0;
-}
-
-.toggle .bar3 {
-    transform: translate(0, -8px) rotate(45deg);
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
+    nav .bigul-button-nav {
+        padding: .6rem 3.5rem;
+        background-color: #fe7526;
+        border-radius: 10px;
     }
 
-    h2 {
-        font-size: 2rem;
+    .toggle .bar1 {
+        transform: translate(0, 8px) rotate(-45deg);
     }
 
-    h3 {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
+    .toggle .bar2 {
+        opacity: 0;
     }
 
-    h2 {
-        font-size: 1.75rem;
+    .toggle .bar3 {
+        transform: translate(0, -8px) rotate(45deg);
     }
 
-    h3 {
-        font-size: 1rem;
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
     }
 }

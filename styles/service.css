@@ -44,7 +44,6 @@
 }
 
 #services .service-card .card-grid .card p {
-    padding: 15px;
     color: #333;
 }
 
@@ -55,7 +54,6 @@
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
-    margin-bottom: 15px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -68,6 +66,23 @@
 @media screen and (max-width: 768px) {
     #services .service-card .card-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    #services .services-title h1 span {
+        font-size: 1.5rem;
+    }
+
+
+    #services .services-title h1 {
+        font-size: 1rem;
+    }
+
+    #services .service-card .card-grid .card h1 {
+        font-size: 1.2rem;
+    }
+
+    #services .service-card .card-grid .card p {
+        font-size: 1rem;
     }
 
 }

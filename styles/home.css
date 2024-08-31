@@ -519,7 +519,7 @@
 .footer {
     margin-top: 1.5rem;
     border-top: 1px solid #d1d1d16f;
-    background-color: #fffdfd;
+    background-color: #f6f6f6;
     color: #000;
     padding: 40px 20px;
 }
@@ -715,10 +715,41 @@
     }
 }
 
+
+/* Media Query for Tablet Screens */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .center-image {
+        display: none;
+    }
+
+    .left-column,
+    .right-column {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .service-box {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
 @media (max-width:1000px) {
 
     #about .about-info {
         flex-direction: column;
+    }
+
+    #about .about-info .about-niceLogo {
+        display: flex;
+        align-items: center;
+        margin-top: -2rem;
+        justify-content: center;
     }
 
     #about .about-info .about-niceLogo img {
@@ -750,29 +781,6 @@
     }
 }
 
-/* Media Query for Tablet Screens */
-@media (max-width: 1024px) {
-    .content {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .center-image {
-        display: none;
-    }
-
-    .left-column,
-    .right-column {
-        width: 50%;
-        margin-bottom: 15px;
-    }
-
-    .service-box {
-        width: 90%;
-        margin: 10px auto;
-    }
-}
-
 /* Media Query for Mobile Screens */
 @media (max-width: 768px) {
 
@@ -794,14 +802,35 @@
         padding: 20px;
     }
 
+    .service-box h3 {
+        font-size: 1rem;
+    }
+
+    #about .about-title h1 {
+        font-size: 2rem;
+    }
+
+    .service .service-headline {
+        padding: 0 1rem;
+    }
+
     .services-content {
         max-width: 100%;
         margin-bottom: 20px;
         text-align: center;
     }
 
+    .contact-btn {
+        padding: 7px 13px;
+    }
+
+    .footer-columns {
+        gap: 0px;
+    }
+
     .services-content h1 {
-        font-size: 28px;
+        font-size: 1.2rem;
+        line-height: 1rem;
     }
 
     .services-list li {
@@ -840,13 +869,22 @@
     #services .services-title h1 span,
     #branding .branding-title h1,
     #branding .branding-title h1 span,
-    #branding .branding-showcase h2,
+
     #branding .branding-showcase h1 {
         font-size: 1.5rem;
     }
 
+    #branding .branding-showcase h2 {
+        font-size: 1.2rem;
+    }
+
     #about .about-title h1 {
         font-size: 2rem;
+    }
+
+    .services-content h3 {
+        color: #666;
+        font-size: 1.2rem;
     }
 
     #hero {
@@ -857,9 +895,8 @@
     }
 
     #hero .hero1 h1 {
-        font-size: 2.1rem;
+        font-size: 2rem;
         line-height: 2.2rem;
-        /* Slightly smaller for mobile */
     }
 
     #about .about-info {
@@ -873,7 +910,7 @@
 
     #hero .hero1 h3 {
         line-height: 2rem;
-        font-size: 1.2em;
+        font-size: 1.2rem;
         /* Slightly smaller for mobile */
     }
 
@@ -922,7 +959,7 @@
 
 @media (max-width: 480px) {
     #contact-us h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .contact-form {
@@ -942,6 +979,10 @@
     #hero .hero1 h1 {
         font-size: 1.5rem;
         line-height: 1.8rem;
+    }
+
+    #about .about-title h1 {
+        font-size: 1.5rem;
     }
 
     #hero .hero1 h3 {

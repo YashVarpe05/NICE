@@ -38,7 +38,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
 .team-container .team-card {

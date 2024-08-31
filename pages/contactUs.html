@@ -9,7 +9,7 @@
     <meta name="keywords"
         content="Advertising, Digital Marketing, Branding, Web Development, Event Management, Printing, Public Relations">
     <meta name="author" content="Nice Art Media">
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon-32x32.png">
 
     <!-- Open Graph Metadata -->
     <meta name="google-site-verification" content="x-Zc9gJTjX3iOqfMiNLNH-4KZj3fEiRXSGGeyio-NVE" />
@@ -33,6 +33,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/contact.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NICE Art Media | Elevate Your Brand</title>
@@ -64,7 +65,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="../pages/clients.html">Our Clients</a>
+                            <a href="../pages/client.html">Our Clients</a>
                         </li>
                         <li>
                             <a href="../pages/about.html">About Us</a>
@@ -109,7 +110,7 @@
                         <a href="../pages/contactUs.html">Contact Us</a>
                     </li>
                     <li>
-                        <a class="bigul-button" href="../pages/bigul.html">BIGUL</a>
+                        <a class="bigul-button-nav" href="../pages/bigul.html">BIGUL</a>
                     </li>
                 </ul>
             </div>
@@ -126,17 +127,18 @@
         </div>
 
     </section>
-    <section id="contact-us">
+    <section>
+
         <div class="tailwind-container">
 
-            <div>
-                <div class="max-w-7xl mx-auto  px-4  sm:px-6 lg:px-8 ">
+            <div class="">
+                <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
                     <div class="relative bg-white shadow-xl">
                         <h2 class="sr-only">Contact us</h2>
 
-                        <div class="grid grid-cols-1 lg:grid-cols-3 ">
+                        <div class="grid grid-cols-1 lg:grid-cols-3">
                             <!-- Contact information -->
-                            <div class="relative overflow-hidden py-10 px-6 bg-orange-400 sm:px-10 xl:p-12 rounded-md">
+                            <div class="relative overflow-hidden py-10 px-6 bg-orange-400 sm:px-10 xl:p-12">
                                 <div class="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
                                     <svg class="absolute inset-0 w-full h-full" width="343" height="388"
                                         viewBox="0 0 343 388" fill="none" preserveAspectRatio="xMidYMid slice"
@@ -152,7 +154,7 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <div class="hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none sm:block lg:hidden "
+                                <div class="hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none sm:block lg:hidden"
                                     aria-hidden="true">
                                     <svg class="absolute inset-0 w-full h-full" width="359" height="339"
                                         viewBox="0 0 359 339" fill="none" preserveAspectRatio="xMidYMid slice"
@@ -169,7 +171,7 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <div class="hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none lg:block "
+                                <div class="hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none lg:block"
                                     aria-hidden="true">
                                     <svg class="absolute inset-0 w-full h-full" width="160" height="678"
                                         viewBox="0 0 160 678" fill="none" preserveAspectRatio="xMidYMid slice"
@@ -251,27 +253,18 @@
                             <!-- Contact form -->
                             <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
                                 <h3 class="text-lg font-medium text-gray-900">Send us a message</h3>
-                                <form
-                                    action=" https://script.google.com/macros/s/AKfycbyxnI6h0ewvO8jkT5pApps0amZGpyr5ULrz4oXRhQfUuSVPxOqw73yUp5KwZWWgMt_d/exec"
+                                <form id="contactForm"
+                                    action=" https://script.google.com/macros/s/AKfycbyAsB8x9VbmKe84WCnRrWJM9gKJEUDoGu-Be8KHzL4ArKBkh8ZR3dwYQyeXzx4SAz3F/exec"
                                     method="POST" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                                     <div>
-                                        <label for="first-name" class="block text-sm font-medium text-gray-900">First
-                                            name</label>
+                                        <label for="name" class="block text-sm font-medium text-gray-900">
+                                            Name</label>
                                         <div class="mt-1">
-                                            <input type="text" name="first-name" id="first-name"
-                                                autocomplete="given-name"
+                                            <input type="text" name="name" id="first-name" autocomplete="given-name"
                                                 class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
                                         </div>
                                     </div>
-                                    <div>
-                                        <label for="last-name" class="block text-sm font-medium text-gray-900">Last
-                                            name</label>
-                                        <div class="mt-1">
-                                            <input type="text" name="last-name" id="last-name"
-                                                autocomplete="family-name"
-                                                class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
-                                        </div>
-                                    </div>
+
                                     <div>
                                         <label for="email" class="block text-sm font-medium text-gray-900">Email</label>
                                         <div class="mt-1">
@@ -283,22 +276,15 @@
                                         <div class="flex justify-between">
                                             <label for="phone"
                                                 class="block text-sm font-medium text-gray-900">Phone</label>
-                                            <span id="phone-optional" class="text-sm text-gray-500">Optional</span>
+
                                         </div>
                                         <div class="mt-1">
-                                            <input type="text" name="phone" id="phone" autocomplete="tel"
+                                            <input type="text" name="contact" id="phone" autocomplete="tel"
                                                 class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                                                 aria-describedby="phone-optional">
                                         </div>
                                     </div>
-                                    <div class="sm:col-span-2">
-                                        <label for="subject"
-                                            class="block text-sm font-medium text-gray-900">Subject</label>
-                                        <div class="mt-1">
-                                            <input type="text" name="subject" id="subject"
-                                                class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
-                                        </div>
-                                    </div>
+
                                     <div class="sm:col-span-2">
                                         <div class="flex justify-between">
                                             <label for="message"
@@ -323,13 +309,25 @@
                 </div>
             </div>
         </div>
+
     </section>
+    <div class="whatsapp-button">
+        <a href="https://wa.me/+919665448021" target="_blank">
+            <img src="../assets/whatsapp.png" alt="WhatsApp" />
+        </a>
+
+    </div>
+    <div class="call-button">
+        <a href="tel:+1234567890" onclick="handleDesktopCall()">
+            <img src="../assets/call_phone.png" alt="Call Us" />
+        </a>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer-columns">
                 <div class="footer-column">
                     <div class="footer-logo">
-                        <img src="../assets/nicelogo.webp" alt="Logo">
+                        <img src="../assets/nice media logo.webp" alt="Logo">
                         <p>Unleash Your Brand's Full Potential with Nice Art Media</p>
                     </div>
 

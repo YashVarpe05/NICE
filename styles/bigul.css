@@ -315,8 +315,38 @@ button.submit-btn:hover {
 
     .bigul-container .bigul-headline .bigul-info p {
         font-size: 1rem;
-        line-height: 1;
+        line-height: 1.5;
         text-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:765px) {
+    .bigul-container .bigul-headline .bigul-img img {
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+        transform: translateX(0%);
+    }
+
+    .bigul-container .bigul-headline .bigul-info {
+        width: 90%;
+        transform: translateX(5%);
+    }
+
+    .cards .card-headline h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .cards .card-headline h3 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .custom-download-btn {
+        padding: 7px 10px;
+        font-size: 1rem;
     }
 }
 
