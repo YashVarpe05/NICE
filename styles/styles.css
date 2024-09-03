@@ -14,7 +14,7 @@
     }
 
     p {
-        font-size: 1.2rem
+        font-size: 1rem
     }
 
 
@@ -47,8 +47,10 @@ nav .navbar-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1220px;
     padding: 0 1.5rem;
     height: 5rem;
+    margin: 0 auto;
     background-color: #fff;
 }
 
@@ -56,6 +58,7 @@ nav .navbar-container-brand img {
     width: 7rem;
     object-fit: cover;
     display: flex;
+    margin-right: 2rem;
     align-items: center;
     justify-content: center;
 }
@@ -95,17 +98,15 @@ nav .navbar-container-cta button {
     border: none;
     border-radius: 15px;
     padding: .4rem 1rem;
+    margin-left: 2rem;
 }
 
 .bigul-button {
     display: flex;
     align-items: center;
-    background-color: #f97316;
-    /* Orange color */
     color: white;
     font-weight: bold;
     flex-direction: column;
-    /* Fully rounded corners */
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -158,6 +159,7 @@ nav .navbar-container-links ul li .dropdown-menu li {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: left;
     line-height: .1rem;
 }
 
@@ -177,6 +179,7 @@ nav .navbar-container-links ul li .dropdown-menu li a {
 nav .navbar-container-links ul li.dropdown:hover .dropdown-menu {
     display: flex;
     opacity: 1;
+    align-items: flex-start;
     transform: translateY(0);
 }
 
@@ -200,6 +203,8 @@ nav .navbar-container-links ul li a .dropdown-arrow {
 nav .navbar-container-links ul li.dropdown:hover .dropdown-arrow {
     transform: rotate(-180deg);
 }
+
+
 
 .navbar-container-hamburger-menu .bar1,
 .bar2,
@@ -233,6 +238,10 @@ nav .navbar-container-links ul li.dropdown:hover .dropdown-arrow {
 
 .navbar-mobile-container ul li {
     margin-bottom: 1rem;
+}
+
+.navbar-mobile-container ul li:last-child {
+    margin-top: 2rem;
 }
 
 .navbar-mobile-container ul li a {
@@ -313,6 +322,7 @@ nav .navbar-container-links ul li.dropdown:hover .dropdown-arrow {
 
     nav .navbar-container {
         height: 4rem;
+        margin: 0;
     }
 
     nav .bigul-button-nav {

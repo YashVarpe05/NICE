@@ -72,17 +72,26 @@
         font-size: 1.5rem;
     }
 
+    .service-card .card-grid .card {
+        width: 92%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
 
     #services .services-title h1 {
         font-size: 1rem;
     }
 
-    #services .service-card .card-grid .card h1 {
+    #services .service-card .card-grid .card h3 {
         font-size: 1.2rem;
     }
 
     #services .service-card .card-grid .card p {
         font-size: 1rem;
+        padding: 0 .5rem;
+        text-align: justify;
+        margin-bottom: 2rem;
     }
 
 }

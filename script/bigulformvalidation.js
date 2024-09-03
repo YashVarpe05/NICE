@@ -1,40 +1,3 @@
-document
-	.getElementById("contactForm")
-	.addEventListener("submit", function (event) {
-		event.preventDefault(); // Prevent the default form submission
-
-		const form = event.target;
-
-		// Call validateInputs to check if all inputs are valid
-		const isFormValid = validateInputs();
-
-		// Only proceed with form submission if the form is valid
-		if (isFormValid) {
-			const formData = new FormData(form);
-
-			fetch(form.action, {
-				method: form.method,
-				body: formData,
-			})
-				.then((response) => response.json())
-				.then((data) => {
-					if (data.result === "success") {
-						alert("Form submitted successfully!");
-						form.reset(); // Optionally reset the form
-					} else {
-						alert("There was an error submitting the form: " + data.error);
-					}
-				})
-				.catch((error) => {
-					alert("An error occurred: " + error.message);
-				});
-		} else {
-			// If the form is not valid, optionally show an alert or focus the first invalid field
-			alert("Please fill out all required fields correctly before submitting.");
-		}
-	});
-
-// formSubmission();
 // Getting form and input elements
 const contactForm = document.getElementById("contactForm");
 const nameField = document.getElementById("name");
@@ -50,13 +13,45 @@ contactForm.addEventListener("submit", function (e) {
 
 	if (isFormValid) {
 		// If all inputs are valid, submit the form
+		fetch(contactForm.action, {
+			method: contactForm.method,
+			body: new FormData(contactForm),
+		})
+			.then((response) => response.json())
+			.then((data) => {
+				if (data.result === "success") {
+					alert("Form submitted successfully!");
+					contactForm.reset(); // Optionally reset the form
+					window.location.href =
+						"../assets/Bigul Election Campagin - Nice Art Media 2024.pdf";
+				} else {
+					alert("There was an error submitting the form: " + data.error);
+				}
+			})
+			.catch((error) => {
+				alert("An error occurred: " + error.message);
+			});
+	} else {
+		alert(
+			"Please fill out all required fields correctly before submitting the form"
+		);
+	}
+});
+
+contactForm.addEventListener("submit", function (e) {
+	e.preventDefault(); // Prevent default form submission
+
+	let isFormValid = validateInputs();
+
+	if (isFormValid) {
+		// If all inputs are valid, submit the form
 		contactForm.submit();
 	}
 });
 
 // Function to display error messages
 const setError = (element, message) => {
-	const errorDisplay = element.parentElement.querySelector("p");
+	const errorDisplay = document.getElementById(element.id + "Error");
 	errorDisplay.innerText = message;
 	errorDisplay.classList.remove("hidden");
 	element.classList.add("border-red-600");
@@ -64,7 +59,7 @@ const setError = (element, message) => {
 
 // Function to remove error messages and show success
 const setSuccess = (element) => {
-	const errorDisplay = element.parentElement.querySelector("p");
+	const errorDisplay = document.getElementById(element.id + "Error");
 	errorDisplay.innerText = "";
 	errorDisplay.classList.add("hidden");
 	element.classList.remove("border-red-600");
@@ -78,7 +73,7 @@ const isValidEmail = (email) => {
 
 // Phone number validation using regex
 const isValidPhone = (phone) => {
-	const re = /^\+?[1-9]\d{1,14}$/;
+	const re = /^\d{10}$/;
 	return re.test(phone);
 };
 
@@ -134,11 +129,3 @@ const validateInputs = () => {
 
 	return isValid; // Return true if all validations pass
 };
-
-function handleDesktopCall() {
-	if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/i)) {
-		alert(
-			"This will open your default calling application. If you don't have one, please call us directly at +1234567890."
-		);
-	}
-}

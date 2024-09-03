@@ -11,10 +11,9 @@ body {
     overflow: hidden;
     position: relative;
     max-width: 1220px;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
+    padding: 1rem;
 }
-
-
 
 
 .services-headline h3 {
@@ -24,8 +23,12 @@ body {
     color: #282828c5;
 }
 
-.services-headline h1:nth-child(2) {
+.services-headline h1 {
     color: #FF5733;
+}
+
+.services-headline h1 span {
+    color: #1c1a1a;
 }
 
 .services-headline h1 {
@@ -35,7 +38,7 @@ body {
 }
 
 .services-headline p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #1c1a1a;
     text-align: justify;
     padding-right: 21rem;
@@ -98,7 +101,7 @@ body {
 
     .services-headline p {
         padding: 3rem;
-        margin-top: -2rem;
+        margin-top: -rem;
         font-size: 1rem;
         text-align: center;
     }
@@ -141,10 +144,22 @@ body {
     }
 
     .services-headline h3 {
+
         font-size: 1.2rem;
     }
 
     .services-headline h1 {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width:480px) {
+    .services-headline h3 {
+        display: none;
+    }
+
+    .service {
+        margin: 0;
+        padding: 0;
     }
 }

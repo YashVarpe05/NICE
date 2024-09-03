@@ -31,8 +31,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/home.css">
+    <script src="bower_components/aos/dist/aos.js"></script>
 
     <title>NICE Art Media | Elevate Your Brand</title>
 </head>
@@ -46,7 +49,10 @@
                 <div class="navbar-container">
                     <!-- Logo and brand section -->
                     <div class="navbar-container-brand">
-                        <img src="assets/nice media logo.webp" alt="Workflow Logo">
+                        <a href="index.html">
+
+                            <img src="assets/nice media logo.webp" alt="Workflow Logo">
+                        </a>
                     </div>
 
                     <!-- Navigation links -->
@@ -58,11 +64,17 @@
                             <li class="dropdown">
                                 <a>Our Services <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="pages/eventmanagement.html">Event management</a></li>
+                                    <li><a href="pages/advertising.html">Advertising</a></li>
+                                    <li><a href="pages/marketing.html">Marketing</a></li>
+                                    <li><a href="pages/branding.html">Branding</a></li>
+                                    <li><a href="pages/designing.html">Designing </a></li>
                                     <li><a href="pages/printing.html">Printing</a></li>
-                                    <li><a href="pages/designing.html">Designing 3</a></li>
+                                    <li><a href="pages/digitalmarketing.html">Digital Marketing</a></li>
+                                    <li><a href="pages/electioncampaigning.html">Election Campaigning</a></li>
+                                    <li><a href="pages/eventmanagement.html">Event management</a></li>
                                     <li><a href="pages/publicrelations.html">Public Relations</a></li>
-                                    <li><a href="pages/service.html">More...</a></li>
+                                    <li><a href="pages/webdevelopment.html">Web Developement</a></li>
+                                    <li><a href="pages/service.html"></a></li>
                                 </ul>
                             </li>
                             <li><a href="pages/client.html">
@@ -142,7 +154,7 @@
                 <div class="about-info">
                     <div class="about-niceLogo">
 
-                        <img src="assets/nicelogo.webp" alt="nice-art-media-logo">
+                        <img src="assets/nice media logo.webp" alt="nice-art-media-logo">
                     </div>
                     <div class="background"></div>
                     <p>Boost your brand visibility with our comprehensive advertising solutions. From strategy to
@@ -354,7 +366,10 @@
                             <li>📣 Public Relations</li>
                     </div>
                     </ul>
-                    <button class="contact-btn">Contact Us</button>
+                    <a href="./pages/contactUs.html">
+
+                        <button class="contact-btn">Contact Us</button>
+                    </a>
                 </div>
                 <div class="services-images">
                     <img src="assets/contactus-logo.webp" alt="Service Image 1" class="main-image">
@@ -363,13 +378,12 @@
             </div>
 
             <div class="whatsapp-button">
-                <a href="https://wa.me/+919665448021" target="_blank">
+                <a href="https://wa.me/+917773998307" target="_blank">
                     <img src="assets/whatsapp.png" alt="WhatsApp" />
                 </a>
-
             </div>
             <div class="call-button">
-                <a href="tel:+1234567890" onclick="handleDesktopCall()">
+                <a href="tel:+912550358431" onclick="handleDesktopCall()">
                     <img src="assets/call_phone.png" alt="Call Us" />
                 </a>
             </div>
@@ -427,8 +441,13 @@
                                         class="fa-brands fa-linkedin"></i></a>
                             </div>
                             <div class="subscribe-form">
-                                <input type="email" placeholder="Enter email address">
-                                <button>Let's Connect</button>
+                                <form id="contactForm"
+                                    action="https://script.google.com/macros/s/AKfycbyC-X6QuxoWzOgXKSjOBUzZE3m-cMgx7MPwRX4FZZCccQlAqBqvfK66DXj4a_cF8pFAvg/exec"
+                                    method="POST">
+                                    <input type="email" id="email" name="email" placeholder="Enter email address"
+                                        required>
+                                    <button type="submit" class="submit-btn">Let's Connect</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -445,5 +464,7 @@
 </body>
 <script src="./script/navbar.js" defer></script>
 <script src="https://kit.fontawesome.com/6402fb289c.js" crossorigin="anonymous" defer></script>
+<script type="module" src="./script/emailsubmission.js"></script>
+<script src="./script/index.js"></script>
 
 </html>

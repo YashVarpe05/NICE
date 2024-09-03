@@ -119,18 +119,6 @@ window.onclick = function (event) {
 };
 
 // Handle Form Submission
-document.getElementById("contactForm").onsubmit = function (event) {
-	event.preventDefault();
-
-	// Here you can add your form submission logic (e.g., send data to server)
-
-	// After form submission, trigger PDF download
-	window.location.href =
-		"../assets/Bigul Election Campagin - Nice Art Media 2024.pdf";
-
-	// Close the modal
-	modal.style.display = "none";
-};
 document
 	.getElementById("contactForm")
 	.addEventListener("submit", function (event) {
@@ -148,6 +136,8 @@ document
 				if (data.result === "success") {
 					alert("Form submitted successfully!");
 					form.reset(); // Optionally reset the form
+					window.location.href =
+						"../assets/Bigul Election Campagin - Nice Art Media 2024.pdf";
 				} else {
 					alert("There was an error submitting the form: " + data.error);
 				}
@@ -156,41 +146,3 @@ document
 				alert("An error occurred: " + error.message);
 			});
 	});
-// formSubmission();
-
-const formValidation = () => {
-	document
-		.getElementById("contact-form")
-		.addEventListener("submit", function (event) {
-			const name = document.getElementById("name").value;
-			const email = document.getElementById("email").value;
-			const phone = document.getElementById("phone").value;
-			const message = document.getElementById("message").value;
-
-			// Custom validation for name
-			const namePattern = /^[A-Za-z\s]+$/;
-			if (!namePattern.test(name)) {
-				alert(
-					"Please enter a valid name. Only letters and spaces are allowed."
-				);
-				event.preventDefault();
-				return;
-			}
-
-			// Custom validation for email (already handled by type="email", but for extra checks)
-			const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-			if (!emailPattern.test(email)) {
-				alert("Please enter a valid email address.");
-				event.preventDefault();
-				return;
-			}
-
-			// Custom validation for phone number
-			const phonePattern = /^[0-9]{10}$/;
-			if (!phonePattern.test(phone)) {
-				alert("Please enter a valid phone number with 10 digits.");
-				event.preventDefault();
-				return;
-			}
-		});
-};
