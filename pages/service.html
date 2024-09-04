@@ -26,11 +26,13 @@
     <meta name="twitter:description"
         content="Unleash your brand's full potential with Nice Art Media's expertise. Comprehensive advertising, digital marketing, and branding services.">
     <meta name="twitter:image" content="assets/nice media logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/home.css">
@@ -46,7 +48,7 @@
                 <div class="navbar-container-brand">
                     <a href="../index.html">
 
-                        <img src="../assets/nice media logo.webp" alt="Workflow Logo">
+                        <img loading="lazy" src="../assets/nice media logo.webp" alt="Workflow Logo">
                     </a>
                 </div>
 
@@ -132,7 +134,7 @@
                 <h2>Your Brand, Our expertise</h1>
             </div>
             <div class="hero2">
-                <img src="../assets/Group 1000003825.webp" alt="nice-art-media-logo-main">
+                <img loading="lazy" src="../assets/Group 1000003825.webp" alt="nice-art-media-logo-main">
             </div>
 
         </section>
@@ -143,7 +145,7 @@
             <div class="service-card">
                 <div class="card-grid">
                     <div class="card">
-                        <img src="../assets/eventmanagement.webp" alt="Event Management">
+                        <img loading="lazy" src="../assets/eventmanagement.webp" alt="Event Management">
                         <h3>Event Management</h3>
                         <p>Boost your brand visibility with our comprehensive advertising solutions. From strategy to
                             execution</p>
@@ -151,21 +153,21 @@
                             More</a>
                     </div>
                     <div class="card">
-                        <img src="../assets/printing.webp" alt="Printing">
+                        <img loading="lazy" src="../assets/printing.webp" alt="Printing">
                         <h3>Printing</h3>
                         <p>Boost your brand visibility with our comprehensive advertising solutions. From strategy to
                             execution</p>
                         <a href="../pages/printing.html" class="read-more" data-service="printing">Read More</a>
                     </div>
                     <div class="card">
-                        <img src="../assets/Designing-Courses.webp" alt="Designing">
+                        <img loading="lazy" src="../assets/Designing-Courses.webp" alt="Designing">
                         <h3>Designing</h3>
                         <p>Boost your brand visibility with our comprehensive advertising solutions. From strategy to
                             execution</p>
                         <a href="../pages/designing.html" class="read-more" data-service="designing">Read More</a>
                     </div>
                     <div class="card">
-                        <img src="../assets/public-relations.jpg" alt="Public Relations">
+                        <img loading="lazy" src="../assets/public-relations.jpg" alt="Public Relations">
                         <h3>Public Relations</h3>
                         <p>Boost your brand visibility with our comprehensive advertising solutions. From strategy to
                             execution</p>
@@ -173,7 +175,7 @@
                             More</a>
                     </div>
                     <div class="card">
-                        <img src="../assets/Advertising.webp" alt="Advertising">
+                        <img loading="lazy" src="../assets/Advertising.webp" alt="Advertising">
                         <h3>Advertising</h3>
                         <p>Boost your brand visibility with our comprehensive advertising solutions. From strategy to
                             execution</p>
@@ -181,14 +183,14 @@
                             More</a>
                     </div>
                     <div class="card">
-                        <img src="../assets/Business-Branding.webp" alt="Branding">
+                        <img loading="lazy" src="../assets/Business-Branding.webp" alt="Branding">
                         <h3>Branding</h3>
                         <p>Boost your brand visibility with our comprehensive advertising solutions. From strategy to
                             execution</p>
                         <a href="../pages/branding.html" class="read-more" data-service="branding">Read More</a>
                     </div>
                     <div class="card">
-                        <img src="../assets/digitalmarking.webp" alt="digitalmarketing">
+                        <img loading="lazy" src="../assets/digitalmarking.webp" alt="digitalmarketing">
                         <h3>Digital Marketing</h3>
                         <p>Boost your brand visibility with our comprehensive advertising solutions. From strategy to
                             execution</p>
@@ -196,7 +198,7 @@
                             More</a>
                     </div>
                     <div class="card">
-                        <img src="../assets/webdevelopement.webp" alt="webdevelopement">
+                        <img loading="lazy" src="../assets/webdevelopement.webp" alt="webdevelopement">
                         <h3>Web Development</h3>
                         <p>Boost your brand visibility with our comprehensive advertising solutions. From strategy to
                             execution</p>
@@ -209,7 +211,7 @@
 
         <div class="whatsapp-button">
             <a href="https://wa.me/+917773998307" target="_blank">
-                <img src="../assets/whatsapp.png" alt="WhatsApp" />
+                <img loading="lazy" src="../assets/whatsapp.png" alt="WhatsApp" />
             </a>
 
 
@@ -217,7 +219,7 @@
         </div>
         <div class="call-button">
             <a href="tel:+912550358431" onclick="handleDesktopCall()">
-                <img src="../assets/call_phone.png" alt="Call Us" />
+                <img loading="lazy" src="../assets/call_phone.png" alt="Call Us" />
             </a>
         </div>
         <footer class="footer">
@@ -225,7 +227,7 @@
                 <div class="footer-columns">
                     <div class="footer-column">
                         <div class="footer-logo">
-                            <img src="../assets/nice media logo.webp" alt="Logo">
+                            <img loading="lazy" src="../assets/nice media logo.webp" alt="Logo">
                             <p>Unleash Your Brand's Full Potential with Nice Art Media</p>
                         </div>
 
@@ -285,6 +287,8 @@
     </div>
     <script src="../script/navbar.js" defer></script>
     <script src="https://kit.fontawesome.com/6402fb289c.js" crossorigin="anonymous" defer></script>
+    <script type="module" src="../script/emailsubmission.js" defer></script>
+    <script type="module" src="../script/animation.js" defer></script>
 </body>
 
 </html>

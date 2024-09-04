@@ -138,7 +138,7 @@ const validateInputs = () => {
 function handleDesktopCall() {
 	if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/i)) {
 		alert(
-			"This will open your default calling application. If you don't have one, please call us directly at +1234567890."
+			"This will open your default calling application. If you don't have one, please call us directly at +917773998307."
 		);
 	}
 }

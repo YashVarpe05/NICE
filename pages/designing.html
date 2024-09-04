@@ -28,9 +28,11 @@
     <meta name="twitter:image" content="assets/nice media logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js" defer></script>
+
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/home.css">
     <link rel="stylesheet" href="../styles/eventmanagement.css">
@@ -46,7 +48,7 @@
                 <div class="navbar-container-brand">
                     <a href="../index.html">
 
-                        <img src="../assets/nice media logo.webp" alt="Workflow Logo">
+                        <img loading="lazy" src="../assets/nice media logo.webp" alt="Workflow Logo">
                     </a>
                 </div>
 
@@ -142,14 +144,14 @@
             </button>
         </div>
         <div class="services-img">
-            <img src="../assets/eventservicemain.png" alt="event-service-main">
-            <img src="../assets/servicealert.webp" alt="service-alert">
+            <img loading="lazy" src="../assets/eventservicemain.png" alt="event-service-main">
+            <img loading="lazy" src="../assets/servicealert.webp" alt="service-alert">
         </div>
     </section>
 
     <div class="whatsapp-button">
         <a href="https://wa.me/+917773998307" target="_blank">
-            <img src="../assets/whatsapp.png" alt="WhatsApp" />
+            <img loading="lazy" src="../assets/whatsapp.png" alt="WhatsApp" />
         </a>
 
 
@@ -157,7 +159,7 @@
     </div>
     <div class="call-button">
         <a href="tel:+912550358431" onclick="handleDesktopCall()">
-            <img src="../assets/call_phone.png" alt="Call Us" />
+            <img loading="lazy" src="../assets/call_phone.png" alt="Call Us" />
         </a>
     </div>
     <footer class="footer">
@@ -165,7 +167,7 @@
             <div class="footer-columns">
                 <div class="footer-column">
                     <div class="footer-logo">
-                        <img src="../assets/nice media logo.webp" alt="Logo">
+                        <img loading="lazy" src="../assets/nice media logo.webp" alt="Logo">
                         <p>Unleash Your Brand's Full Potential with Nice Art Media</p>
                     </div>
 
@@ -225,6 +227,8 @@
     </div>
     <script src="../script/navbar.js" defer></script>
     <script src="https://kit.fontawesome.com/6402fb289c.js" crossorigin="anonymous" defer></script>
+    <script type="module" src="../script/emailsubmission.js" defer></script>
+    <script type="module" src="../script/animation.js" defer></script>
 </body>
 
 </html>
