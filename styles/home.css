@@ -110,16 +110,21 @@
     width: 100%;
     height: 100%;
     z-index: 11;
-    margin-top: 8%;
+    margin: 10%;
     position: relative;
     max-width: 1220px;
 
 }
 
+.hero-headline {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
 
 #about .background {
     width: 90%;
-    height: 30%;
+    height: 25%;
     border-radius: 10rem 0 0 10rem;
     position: absolute;
     background-color: #f3f3f3;
@@ -290,10 +295,9 @@
 }
 
 #branding .branding-showcase {
-    margin-top: 1.5rem;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1360px;
+    margin: 5rem auto;
 }
 
 
@@ -322,7 +326,7 @@
     object-fit: cover;
     position: absolute;
     z-index: -1;
-    top: -20px;
+    top: -90px;
     left: -152px;
 }
 
@@ -331,7 +335,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 56px;
     position: relative;
     margin-top: 1.5rem;
 }
@@ -457,6 +461,7 @@
 }
 
 .service {
+    padding: 1.5rem;
     background-color: #fff7f7af;
 }
 
@@ -507,7 +512,7 @@
 .service-list-item {
     display: flex;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 6rem;
 }
 
 .services-list li {
@@ -670,10 +675,19 @@
 
 }
 
+
+
+@media (min-width:2560px) {
+    #about .background {
+        width: 100%;
+        height: 50%;
+    }
+}
+
 @media (max-width: 1377px) {
     #about .background {
-        height: 50%;
-
+        width: 100%;
+        height: 44%
     }
 
     #hero .hero1 h1 {
@@ -691,6 +705,10 @@
 }
 
 @media (max-width: 1024px) {
+    .hero-headline {
+        margin: 0;
+    }
+
     #branding .branding-showcase-cards {
         flex-direction: column;
         align-items: center;
@@ -744,11 +762,7 @@
     #services .service-card .card-grid .card {
         height: 500px;
     }
-}
 
-
-/* Media Query for Tablet Screens */
-@media (max-width: 1024px) {
     .content {
         flex-direction: row;
         flex-wrap: wrap;
@@ -812,8 +826,11 @@
     }
 }
 
-/* Media Query for Mobile Screens */
 @media (max-width: 768px) {
+    .services-section {
+        flex-direction: column;
+        padding: 20px;
+    }
 
     .left-column,
     .right-column {
@@ -824,13 +841,6 @@
     .service-box {
         width: 90%;
         margin: 10px auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .services-section {
-        flex-direction: column;
-        padding: 20px;
     }
 
     .service-box h3 {
@@ -986,7 +996,8 @@
     }
 
     .service-list-item .services-list li {
-        text-wrap: nowrap;
+        display: flex;
+        align-items: flex-start;
     }
 
     #about {
@@ -998,26 +1009,6 @@
     }
 }
 
-@media (max-width: 480px) {
-    #contact-us h2 {
-        font-size: 1.5rem;
-    }
-
-    .contact-form {
-        padding: 15px;
-    }
-
-    #services .service-card .card-grid {
-        grid-template-columns: 1fr;
-    }
-
-    #services .service-card .card-grid .card {
-        margin-bottom: 20px;
-    }
-
-
-
-}
 
 @media (max-width:582px) {
     #hero .hero1 h1 {
@@ -1054,26 +1045,26 @@
 
 }
 
-/* i want to set the this type of widht and height to 2645 px to 1377px */
-@media (min-width:1377px) {
-    #about .background {
-        width: 100%;
-        height: 50%;
+@media (max-width: 480px) {
+    #contact-us h2 {
+        font-size: 1.5rem;
     }
-}
 
-@media (min-width:2560px) {
-    #about .background {
-        width: 100%;
-        height: 50%;
+    .contact-form {
+        padding: 15px;
     }
-}
 
-@media (max-width:480px) {
+    #services .service-card .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #services .service-card .card-grid .card {
+        margin-bottom: 20px;
+    }
+
     #hero {
         margin-top: 1.5rem;
     }
-
 
     .hero2 img {
 

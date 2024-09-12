@@ -78,6 +78,9 @@
         margin: 0 auto;
     }
 
+    #services .service-card .card-grid {
+        gap: 1rem;
+    }
 
     #services .services-title h1 {
         font-size: 1rem;

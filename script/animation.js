@@ -155,11 +155,11 @@ gsap.from(".relative.overflow-hidden", {
 
 gsap.from("#contactForm", {
 	opacity: 0,
-	y: 50,
-	duration: 1,
+	y: 10,
+	duration: 0.5,
 	scrollTrigger: {
 		trigger: "#contactForm",
-		start: "top 80%",
+		start: "top 90%",
 		end: "top 30%",
 		scrub: true,
 		markers: false,

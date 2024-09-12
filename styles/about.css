@@ -25,6 +25,11 @@
     color: #000;
 }
 
+.hero-headline {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
 .team-container-title {
     text-align: center;
     margin-top: 1.5rem;
