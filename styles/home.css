@@ -186,7 +186,7 @@
 #moving-div .move {
     display: inline-block;
     animation-name: mobe;
-    animation-duration: 8s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }

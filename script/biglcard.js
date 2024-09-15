@@ -94,7 +94,7 @@ wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
 const config = {
-	documentId: "594bb135-6f77-4069-8119-1f7371596966",
+	documentId: "98836a70-e6a4-4a54-a675-df26e678545f",
 	darkMode: false,
 };
 CloudPDF(config, document.getElementById("viewer")).then((instance) => {});
@@ -102,15 +102,26 @@ CloudPDF(config, document.getElementById("viewer")).then((instance) => {});
 // Handle Modal Display
 const modal = document.getElementById("contactFormModal");
 const btn = document.getElementById("downloadBtn");
-const span = document.getElementsByClassName("close-btn")[0];
+// const span = document.getElementsByClassName("close-btn")[0];
 
 btn.onclick = function () {
 	modal.style.display = "block";
 };
 
-span.onclick = function () {
-	modal.style.display = "none";
-};
+const modal1 = document.querySelector(".modal-content");
+const closeBtn = document.querySelector(".close-btn");
+
+// Function to close the modal
+closeBtn.addEventListener("click", function () {
+	modal1.style.display = "none";
+});
+
+// Optionally, you can also close the modal if the user clicks outside of it
+window.addEventListener("click", function (event) {
+	if (event.target === modal) {
+		modal1.style.display = "none";
+	}
+});
 
 window.onclick = function (event) {
 	if (event.target == modal) {
@@ -137,7 +148,7 @@ document
 					alert("Form submitted successfully!");
 					form.reset(); // Optionally reset the form
 					window.location.href =
-						"../assets/Bigul Election Campagin - Nice Art Media 2024.pdf";
+						"../assets/Bigul Election Campagin - Nice Art Media 2024 (1).pdf";
 				} else {
 					alert("There was an error submitting the form: " + data.error);
 				}
