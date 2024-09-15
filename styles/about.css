@@ -1,4 +1,7 @@
 /* Base Styles */
+* {
+    font-family: "Poppins", system-ui;
+}
 
 .hero1 h1 {
     margin-top: 1.5rem;
@@ -85,16 +88,18 @@
 }
 
 .team-container .contentBx h4 {
-    color: #36187d;
-    font-size: 1.5rem;
+    color: #FF6F10;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
+    text-wrap: wrap;
 }
 
 .team-container .contentBx h5 {
-    color: #6c758f;
+    color: #000;
     font-size: 1rem;
+    text-wrap: wrap;
     font-weight: bold;
     text-align: center;
 }
