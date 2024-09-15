@@ -38,8 +38,8 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 3rem;
-    font-weight: 600;
-    color: #36187d;
+    font-weight: 700;
+    color: #FC380E;
 }
 
 .team-container {
@@ -70,8 +70,8 @@
 }
 
 .team-container .imgBx {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     position: relative;
     margin-bottom: 20px;
@@ -131,8 +131,8 @@
     }
 
     .team-container .imgBx {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 
     .team-container .contentBx h4 {
@@ -154,8 +154,8 @@
     }
 
     .team-container .imgBx {
-        width: 90px;
-        height: 90px;
+        width: 150px;
+        height: 150px;
     }
 
     .team-container .contentBx h4 {
@@ -195,12 +195,12 @@
 
     /* 1 card per row on mobile landscape */
     .team-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .team-container .imgBx {
-        width: 80px;
-        height: 80px;
+        width: 150px;
+        height: 150px;
         margin-top: 10px;
     }
 
@@ -256,7 +256,7 @@
 
     /* 1 card per row on mobile portrait */
     .team-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .team-container-title {
@@ -268,8 +268,8 @@
     }
 
     .team-container .imgBx {
-        width: 80px;
-        height: 80px;
+        width: 140px;
+        height: 140px;
         margin-top: 10px;
     }
 
