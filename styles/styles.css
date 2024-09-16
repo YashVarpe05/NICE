@@ -291,6 +291,74 @@ nav .navbar-container-links ul li.dropdown:hover .dropdown-arrow {
     transform: scale(1.1);
 }
 
+.bgImage {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: bgChange 20s linear infinite;
+}
+
+@keyframes bgChange {
+    0% {
+        background-image: url(../assets/09.jpg);
+    }
+
+    20% {
+        background-image: url(../assets/879.jpg);
+    }
+
+    25% {
+        background-image: url(../assets/09.jpg);
+
+    }
+
+    45% {
+        background-image: url(../assets/879.jpg);
+    }
+
+    50% {
+        background-image: url(../assets/09.jpg);
+
+    }
+
+    70% {
+        background-image: url(../assets/879.jpg);
+
+    }
+
+    75% {
+        background-image: url(../assets/09.jpg);
+
+    }
+
+    95% {
+        background-image: url(../assets/879.jpg);
+
+    }
+
+    100% {
+        background-image: url(../assets/879.jpg);
+
+    }
+
+}
+
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.091);
+
+}
+
 @media screen and (max-width:1024px) {
     nav .navbar-container-links li a {
         text-wrap: nowrap;

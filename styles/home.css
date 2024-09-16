@@ -33,11 +33,13 @@
 }
 
 .hero1 {
-    max-width: 1220px;
-    transform: translateX(20%);
     padding: 0 2rem;
     line-height: 4rem;
     opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     transform: translateY(20px);
     animation: fadeInUp 1s ease-out 0.3s forwards;
 }
@@ -117,8 +119,9 @@
 }
 
 .hero-headline {
-    max-width: 1220px;
-    margin: 0 auto;
+    /* max-width: 1220px; */
+    margin: 0px auto;
+    margin-top: -30px;
 }
 
 
