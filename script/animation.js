@@ -153,19 +153,6 @@ gsap.from(".relative.overflow-hidden", {
 	},
 });
 
-gsap.from("#contactForm", {
-	opacity: 0,
-	y: 10,
-	duration: 0.5,
-	scrollTrigger: {
-		trigger: "#contactForm",
-		start: "top 90%",
-		end: "top 30%",
-		scrub: true,
-		markers: false,
-	},
-});
-
 gsap.from(".text-gray-900", {
 	opacity: 0,
 	y: 50,
@@ -232,4 +219,33 @@ window.addEventListener("load", () => {
 		ease: "power2.out",
 		stagger: 0.2, // Stagger the image animation
 	});
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+	const images = document.querySelectorAll(".bgImage img");
+	let currentIndex = 0;
+
+	function changeImage() {
+		const currentImage = images[currentIndex];
+		let nextIndex = (currentIndex + 1) % images.length;
+		const nextImage = images[nextIndex];
+
+		// Set the current image to exit and remove the active class
+		currentImage.classList.remove("active");
+		currentImage.classList.add("exit");
+
+		// Add the active class to the next image
+		nextImage.classList.add("active");
+
+		// After the transition, remove the exit class from the previous image
+		setTimeout(() => {
+			currentImage.classList.remove("exit");
+		}, 1000); // Match this with the CSS transition duration
+
+		// Update the index
+		currentIndex = nextIndex;
+	}
+
+	// Change image every 3 seconds
+	setInterval(changeImage, 3000);
 });

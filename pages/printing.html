@@ -138,10 +138,32 @@
                 covered.Boost your brand visibility with our comprehensive advertising solutions. From strategy to
                 execution, we've got
                 you covered.Boost your brand visibility with our comprehensive advertising solutions. .</p>
-            <button> <a href="../pages/contactUs.html">
-                    Contact Us
-                </a>
-            </button>
+            <a href="javascript:void(0);" onclick="openForm()">
+                <button class="contact-btn">Contact Us</button>
+            </a>
+            <div id="contactFormModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeForm()">&times;</span>
+                    <form id="contactForm" onsubmit="return false;"
+                        action="https://script.google.com/macros/s/AKfycbyAsB8x9VbmKe84WCnRrWJM9gKJEUDoGu-Be8KHzL4ArKBkh8ZR3dwYQyeXzx4SAz3F/exec">
+                        <h2>Contact Us</h2>
+
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+
+                        <label for="contact">Contact</label>
+                        <input type="text" id="contact" name="contact" placeholder="Your contact number..">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email..">
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write something.."></textarea>
+
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="services-img">
             <img loading="lazy" src="../assets/eventservicemain.png" alt="event-service-main">
@@ -228,6 +250,8 @@
     <script src="../script/navbar.js" defer></script>
     <script src="https://kit.fontawesome.com/6402fb289c.js" crossorigin="anonymous" defer></script>
     <script type="module" src="../script/animation.js" defer></script>
+    <script type="module" src="../script/popform.js"></script>
+    <script src="../script/scroll.js" defer></script>
     <script type="module" src="../script/emailsubmission.js" defer></script>
 </body>
 

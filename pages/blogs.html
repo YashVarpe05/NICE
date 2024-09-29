@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/home.css">
     <link rel="stylesheet" href="../styles/eventmanagement.css">
+    <link rel="stylesheet" href="../styles/blogmain.css">
 
     <title>NICE Art Media | Elevate Your Brand</title>
 </head>
@@ -123,7 +124,69 @@
             </div>
         </nav>
     </header>
-    <h1>Blogs </h1>
+    <main class="container blog-main">
+        <article class="blog-post-full">
+            <div class="featured-image">
+                <img src="../assets/branding1.webp" alt="Blog Post Image">
+            </div>
+
+            <div class="blog-content">
+                <h1 class="post-title">Blog Post Title</h1>
+                <p class="post-meta">By <span class="author">John Doe</span> | September 23, 2024</p>
+
+                <section class="post-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus venenatis
+                        ligula in quam luctus, vitae bibendum magna fermentum.</p>
+
+                    <p>Curabitur vitae sapien ut tortor hendrerit vehicula. Nullam volutpat dolor sed elit bibendum
+                        tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                        curae;
+                        Etiam malesuada quam nec felis aliquet.</p>
+
+                    <h2>Subheading</h2>
+                    <p>Donec dapibus magna sit amet ex pharetra, non vehicula justo viverra.</p>
+
+                    <blockquote>“This is an inspiring quote related to the blog post content or subject matter.”
+                    </blockquote>
+
+                    <p>Nam interdum leo non risus aliquet, sed viverra enim malesuada. Quisque eget magna vel eros
+                        blandit tempor.</p>
+                </section>
+
+                <div class="post-tags">
+                    <span>#Design</span> <span>#Development</span> <span>#UI</span>
+                </div>
+
+                <!-- Share buttons -->
+                <div class="share-buttons">
+                    <button class="share-btn">Share on Twitter</button>
+                    <button class="share-btn">Share on Facebook</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Sticky Sidebar -->
+        <aside class="sidebar">
+            <div class="author-info">
+                <h3>About the Author</h3>
+                <div class="author-bio">
+                    <img src="../assets/branding1.webp" alt="Author Image">
+                    <p>John Doe is a web developer passionate about creating modern, responsive websites. He writes
+                        about design trends and web development.</p>
+                </div>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="related-posts">
+                <h3>Related Posts</h3>
+                <ul>
+                    <li><a href="#">How to Create a Responsive Website</a></li>
+                    <li><a href="#">Best Web Design Practices</a></li>
+                    <li><a href="#">UI/UX Tips for Beginners</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
     <div class="whatsapp-button">
         <a href="https://wa.me/+917773998307" target="_blank">
             <img loading="lazy" src="../assets/whatsapp.png" alt="WhatsApp" />
@@ -202,6 +265,7 @@
     </div>
     <script src="../script/navbar.js" defer></script>
     <script type="module" src="../script/emailsubmission.js" defer></script>
+    <script src="../script/scroll.js" defer></script>
     <script src="https://kit.fontawesome.com/6402fb289c.js" crossorigin="anonymous" defer></script>
 </body>
 

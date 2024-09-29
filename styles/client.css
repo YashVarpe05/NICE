@@ -1,0 +1,50 @@
+/* Container for the grid */
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card styling */
+.logo-card {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.logo-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image styling */
+.logo-card img {
+    max-width: 207px;
+    max-height: 179px;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .logo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-grid {
+        grid-template-columns: 1fr;
+    }
+}

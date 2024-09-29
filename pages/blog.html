@@ -26,9 +26,6 @@
     <meta name="twitter:description"
         content="Unleash your brand's full potential with Nice Art Media's expertise. Comprehensive advertising, digital marketing, and branding services.">
     <meta name="twitter:image" content="assets/nice media logo.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js" defer></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload"
@@ -36,6 +33,7 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/home.css">
     <link rel="stylesheet" href="../styles/eventmanagement.css">
+    <link rel="stylesheet" href="../styles/blog.css">
 
     <title>NICE Art Media | Elevate Your Brand</title>
 </head>
@@ -127,132 +125,108 @@
         </nav>
     </header>
 
-    <section class="service">
-        <div class="services-headline">
-            <h3>Contact Us</h3>
-            <h1>Event
-                <span>Management </span>
-            </h1>
-            <p>Boost your brand visibility with our comprehensive advertising solutions. From strategy to execution,
-                we've got you
-                covered.Boost your brand visibility with our comprehensive advertising solutions. From strategy to
-                execution, we've got
-                you covered.Boost your brand visibility with our comprehensive advertising solutions. .</p>
-            <a href="javascript:void(0);" onclick="openForm()">
-                <button class="contact-btn">Contact Us</button>
-            </a>
-            <div id="contactFormModal" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeForm()">&times;</span>
-                    <form id="contactForm" onsubmit="return false;"
-                        action="https://script.google.com/macros/s/AKfycbyAsB8x9VbmKe84WCnRrWJM9gKJEUDoGu-Be8KHzL4ArKBkh8ZR3dwYQyeXzx4SAz3F/exec">
-                        <h2>Contact Us</h2>
 
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name..">
+    </head>
 
-                        <label for="contact">Contact</label>
-                        <input type="text" id="contact" name="contact" placeholder="Your contact number..">
+    <body>
 
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email..">
 
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Write something.."></textarea>
+        <main class="container">
+            <div class="blog-container">
+                <article class="blog-post">
+                    <img src="../assets/branding1.webp" alt="Blog Post Image">
+                    <h2>Blog Post Title</h2>
+                    <p class="date">September 23, 2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus venenatis
+                        ligula
+                        in quam luctus, vitae bibendum magna fermentum.</p>
+                    <a href="./blog2.html" class="read-more">Read More</a>
+                </article>
 
-                        <button type="submit" class="submit-btn">Submit</button>
-                    </form>
-                </div>
+                <article class="blog-post">
+                    <img src="../assets/branding6.webp" alt="Blog Post Image">
+                    <h2>Another Blog Post</h2>
+                    <p class="date">September 22, 2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus venenatis
+                        ligula
+                        in quam luctus, vitae bibendum magna fermentum.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <!-- Add more blog posts as needed -->
             </div>
-        </div>
-        <div class="services-img">
-            <img loading="lazy" src="../assets/eventservicemain.png" alt="event-service-main">
-            <img loading="lazy" src="../assets/servicealert.webp" alt="service-alert">
-        </div>
-    </section>
+        </main>
 
-    <div class="whatsapp-button">
-        <a href="https://wa.me/+917773998307" target="_blank">
-            <img loading="lazy" src="../assets/whatsapp.png" alt="WhatsApp" />
-        </a>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <img loading="lazy" src="../assets/nice media logo.webp" alt="Logo">
+                            <p>Unleash Your Brand's Full Potential with Nice Art Media</p>
+                        </div>
 
-
-
-    </div>
-    <div class="call-button">
-        <a href="tel:+912550358431" onclick="handleDesktopCall()">
-            <img loading="lazy" src="../assets/call_phone.png" alt="Call Us" />
-        </a>
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <div class="footer-logo">
-                        <img loading="lazy" src="../assets/nice media logo.webp" alt="Logo">
-                        <p>Unleash Your Brand's Full Potential with Nice Art Media</p>
                     </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Advertising</a></li>
+                            <li><a href="#">Branding</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Web Development</a></li>
 
-                </div>
-                <div class="footer-column">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">Advertising</a></li>
-                        <li><a href="#">Branding</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Web Development</a></li>
-
-                </div>
-                <div class="footer-column">
-                    <h4>Services.</h4>
-                    <ul>
-
-                        <li><a href="#">Event Management</a></li>
-                        <li><a href="#">Printing</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Public Relations (PR)</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">Terms & conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li>info@niceartmedia.com</li>
-                        <li> +91 7773998307</li>
-                    </ul>
-                </div>
-                <div class="footer-column subscribe">
-                    <h4>Get in touch</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/niceartmedia777/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/nice_art_media_777/"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/channel/UCREmg3QHh_5khL63i7XtxgQ"><i
-                                class="fa-brands fa-youtube"></i></a>
-                        <a
-                            href="https://in.linkedin.com/company/nice-art-media?trk=public_profile_experience-item_profile-section-card_subtitle-click"><i
-                                class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <div class="subscribe-form">
-                        <input type="email" placeholder="Enter email address">
-                        <button>Let's Connect</button>
+                    <div class="footer-column">
+                        <h4>Services.</h4>
+                        <ul>
+
+                            <li><a href="#">Event Management</a></li>
+                            <li><a href="#">Printing</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Public Relations (PR)</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">Terms & conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li>info@niceartmedia.com</li>
+                            <li> +91 7773998307</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column subscribe">
+                        <h4>Get in touch</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/niceartmedia777/"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/nice_art_media_777/"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCREmg3QHh_5khL63i7XtxgQ"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                            <a
+                                href="https://in.linkedin.com/company/nice-art-media?trk=public_profile_experience-item_profile-section-card_subtitle-click"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="subscribe-form">
+                            <input type="email" placeholder="Enter email address">
+                            <button>Let's Connect</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy;2024, All rights reserved Nice Art Media.</p>
-        </div>
-    </footer>
+            <div class="footer-bottom">
+                <p>&copy;2024, All rights reserved Nice Art Media.</p>
+            </div>
+        </footer>
 
-    </div>
-    <script src="../script/navbar.js" defer></script>
-    <script src="https://kit.fontawesome.com/6402fb289c.js" crossorigin="anonymous" defer></script>
-    <script type="module" src="../script/emailsubmission.js" defer></script>
-    <script type="module" src="../script/popform.js"></script>
-    <script src="../script/scroll.js" defer></script>
-    <script type="module" src="../script/animation.js" defer></script>
-</body>
+        <script src="../script/navbar.js" defer></script>
+        <script src="https://kit.fontawesome.com/6402fb289c.js" crossorigin="anonymous" defer></script>
+        <script type="module" src="../script/emailsubmission.js" defer></script>
+        <script type="module" src="../script/popform.js"></script>
+        <script type="module" src="../script/animation.js" defer></script>
+        <script src="../script/scroll.js" defer></script>
+
+    </body>
 
 </html>

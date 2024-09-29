@@ -34,9 +34,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/smooth-scrollbar@8.7.4" defer></script>
+
+
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/blog.css">
 
 
 
@@ -86,7 +90,7 @@
                             <li>
                                 <a href="pages/about.html">About Us</a>
                             </li>
-                            <li><a href="pages/Blog.html">Blogs</a></li>
+                            <li><a href="pages/blogs.html">Blogs</a></li>
                             <li>
                                 <a href="pages/contactUs.html">Contact Us</a>
                             </li>
@@ -96,7 +100,7 @@
                     <!-- Call to action button -->
                     <div class="navbar-container-cta">
                         <button>
-                            <a href="../pages/bigul.html" class="bigul-button"><span class="main-text ">Bigul</span>
+                            <a href="pages/bigul.html" class="bigul-button"><span class="main-text ">Bigul</span>
                                 <span class="sub-text">Election
                                     Campaign</span> </a>
                         </button>
@@ -139,18 +143,14 @@
             <section id="hero">
                 <div class="hero-headline">
                     <div class="bgImage">
-                        <div class="overlay"></div>
-                        <!-- <div class="hero1">
-                            <h1> <span>Elevate</span> with </h1>
-                            <h3>Nice Art Media</h3>
-                            <h2>Your Brand, Our expertise</h1>
-                        </div> -->
+                        <img src="./assets/09.jpg" class="active" alt="Image 1">
+                        <img src="./assets/879.jpg" alt="Image 2">
+                        <img src="./assets/09.jpg" alt="Image 3">
                     </div>
-                    <!-- <div class="hero2">
-                        <img src="assets/Group 1000003825.webp" alt="nice-art-media-main" loading="lazy">
-                    </div> -->
+                    <div class="overlay"></div>
                 </div>
             </section>
+
 
             <section id="about">
                 <div class="about-title">
@@ -293,8 +293,7 @@
                         <img src="assets/branding6.webp" alt="branding6" loading="lazy">
                         <img src="assets/branding7.webp" alt="branding7" loading="lazy">
                         <img src="assets/branding8.webp" alt="branding8" loading="lazy">
-                        <img src="assets/09.jpg" alt="branding9" loading="lazy">
-                        <img src="assets/879.jpg" alt="branding10" loading="lazy">
+
                     </div>
                     <div class="move">
                         <img src="assets/branding1.webp" alt="branding1" loading="lazy">
@@ -305,8 +304,7 @@
                         <img src="assets/branding6.webp" alt="branding6" loading="lazy">
                         <img src="assets/branding7.webp" alt="branding7" loading="lazy">
                         <img src="assets/branding8.webp" alt="branding8" loading="lazy">
-                        <img src="assets/09.jpg" alt="branding9" loading="lazy">
-                        <img src="assets/879.jpg" alt="branding10" loading="lazy">
+
                     </div>
 
                 </div>
@@ -358,6 +356,56 @@
                 </div>
             </section>
 
+            <section class="blog">
+                <h1>Blogs</h1>
+                <main class="container">
+                    <div class="blog-container">
+                        <article class="blog-post">
+                            <img src="../assets/branding1.webp" alt="Blog Post Image">
+                            <h2>Blog Post Title</h2>
+                            <p class="date">September 23, 2024</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus
+                                venenatis
+                                ligula
+                                in quam luctus, vitae bibendum magna fermentum.</p>
+                            <a href="./pages/blog2.html" class="read-more">Read More</a>
+                        </article>
+
+                        <article class="blog-post">
+                            <img src="../assets/branding6.webp" alt="Blog Post Image">
+                            <h2>Another Blog Post</h2>
+                            <p class="date">September 22, 2024</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus
+                                venenatis
+                                ligula
+                                in quam luctus, vitae bibendum magna fermentum.</p>
+                            <a href="./pages/blog2.html" class="read-more">Read More</a>
+                        </article>
+                        <article class="blog-post">
+                            <img src="../assets/branding7.webp" alt="Blog Post Image">
+                            <h2>Another Blog Post</h2>
+                            <p class="date">September 22, 2024</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus
+                                venenatis
+                                ligula
+                                in quam luctus, vitae bibendum magna fermentum.</p>
+                            <a href="./pages/blog2.html" class="read-more">Read More</a>
+                        </article>
+                        <article class="blog-post">
+                            <img src="../assets/branding8.webp" alt="Blog Post Image">
+                            <h2>Another Blog Post</h2>
+                            <p class="date">September 22, 2024</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus
+                                venenatis
+                                ligula
+                                in quam luctus, vitae bibendum magna fermentum.</p>
+                            <a href="./pages/blog2.html" class="read-more">Read More</a>
+                        </article>
+                        <!-- Add more blog posts as needed -->
+                    </div>
+                </main>
+            </section>
+
             <div class="services-section">
                 <div class="services-content">
                     <h3>Contact Us</h3>
@@ -378,11 +426,39 @@
                             <li>📣 Public Relations</li>
                     </div>
                     </ul>
-                    <a href="./pages/contactUs.html">
 
+
+                    <!-- Modal for the popup form -->
+                    <a href="javascript:void(0);" onclick="openForm()">
                         <button class="contact-btn">Contact Us</button>
                     </a>
+
+                    <!-- Modal for the popup form -->
+                    <div id="contactFormModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeForm()">&times;</span>
+                            <form id="contactForm" onsubmit="return false;"
+                                action="https://script.google.com/macros/s/AKfycbyAsB8x9VbmKe84WCnRrWJM9gKJEUDoGu-Be8KHzL4ArKBkh8ZR3dwYQyeXzx4SAz3F/exec">
+                                <h5>Contact Us</h5>
+
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name..">
+
+                                <label for="contact">Contact</label>
+                                <input type="text" id="contact" name="contact" placeholder="Your contact number..">
+
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your email..">
+
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Write something.."></textarea>
+
+                                <button type="submit" class="submit-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="services-images">
                     <img src="assets/contactus-logo.webp" alt="Service Image 1" class="main-image" loading="lazy">
 
@@ -474,5 +550,7 @@
 <script type="module" src="./script/emailsubmission.js" defer></script>
 <script src="./script/index.js" defer></script>
 <script type="module" src="./script/animation.js " defer></script>
+<script type="module" src="./script/popform.js"></script>
+<script src="./script/scroll.js"></script>
 
 </html>

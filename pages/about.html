@@ -151,38 +151,50 @@
         <section id="about-main" class="w-full h-full m-0">
             <div
                 class="about-container bg-[url('../assets/about-us.webp')] bg-cover bg-center p-10 flex flex-col items-center min-h-[50vh]">
-                <div
-                    class="card mission bg-white rounded-[2rem] md:rounded-[8.75rem]  md:p-[3%] max-w-full md:max-w-[43.75rem] text-center relative shadow-lg transform translate-x-0 md:translate-x-[-22%]">
-                    <h2
-                        class="text-[#FF6F00] text-2xl md:text-[2.5rem] lg:text-[3rem] xl:text-[3rem] font-bold leading-tight mb-4">
-                        MISSION
-                    </h2>
-                    <p class="text-justify text-base md:text-[1rem] lg:text-[1rem] xl:text-[1rem] text-[#555] mb-3">
-                        We Transform Businesses Into Powerful Brands. Through Innovative Advertising And Branding
-                        Solutions, We
-                        Exceed Client Expectations, Fostering Lasting Partnerships Built On Trust And Results.
-                    </p>
+                <div class="flex flex-col gap-8"> <!-- Added a flex container with gap -->
                     <div
-                        class="icon target-icon absolute top-[80%] md:top-[70%] right-4 md:right-auto md:translate-x-[75%]">
-                        <img loading="lazy" src="../assets/mission.webp" alt="Target Icon"
-                            class="w-12 md:w-[20%] lg:w-[20%] xl:w-[20%] hidden md:block">
+                        class="card mission bg-white rounded-[2rem] md:rounded-[8.75rem] md:p-[6%] max-w-full md:max-w-[43.75rem] text-center relative shadow-lg flex flex-col md:flex-row items-center">
+                        <div class="icon target-icon flex-shrink-0 md:w-[30%] lg:w-[20%]">
+                            <img loading="lazy" src="../assets/mission.webp" alt="Target Icon"
+                                class="w-12 mx-auto md:w-full">
+                        </div>
+                        <div class="info text-left md:w-[70%] lg:w-[80%] md:pl-4">
+                            <h2
+                                class="text-[#FF6F00] text-2xl md:text-[2.5rem] lg:text-[3rem] xl:text-[3rem] font-bold leading-tight mb-4">
+                                MISSION
+                            </h2>
+                            <p
+                                class="text-justify text-base md:text-[1rem] lg:text-[1rem] xl:text-[1rem] text-[#555] mb-3">
+                                We Transform Businesses Into Powerful Brands. Through Innovative Advertising And
+                                Branding
+                                Solutions, We Exceed Client Expectations, Fostering Lasting Partnerships Built On Trust
+                                And
+                                Results.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div
-                    class="card vision bg-white rounded-[2rem] md:rounded-[8.75rem] p-6 md:p-[3%] max-w-full md:max-w-[43.75rem] text-center relative shadow-lg mt-8 md:mt-[6.25rem] lg:mt-[8rem] xl:mt-[10rem] mb-8 md:mb-[3.125rem] transform translate-x-0 md:translate-x-[20%]">
-                    <div class="icon eye-icon absolute top-[80%] md:top-[70%] left-4 md:left-auto md:translate-x-0">
-                        <img loading="lazy" src="../assets/vision.webp" alt="Eye Icon"
-                            class="w-12 md:w-[20%] lg:w-[20%] xl:w-[20%] hidden md:block">
+
+                    <div
+                        class="card vision bg-white rounded-[2rem] md:rounded-[8.75rem] p-6 md:p-[6%] max-w-full md:max-w-[43.75rem] text-center relative shadow-lg mt-8 md:mt-[6.25rem] lg:mt-[8rem] xl:mt-[10rem] mb-8 md:mb-[3.125rem] flex flex-col md:flex-row items-center">
+                        <div class="info text-left md:w-[70%] lg:w-[80%] md:pr-4">
+                            <h2
+                                class="text-[#FF6F00] text-2xl md:text-[2.5rem] lg:text-[3rem] xl:text-[3rem] font-bold leading-tight mb-4">
+                                VISION
+                            </h2>
+                            <p
+                                class="text-justify text-base md:text-[1rem] lg:text-[1rem] xl:text-[1rem] text-[#555] mb-6">
+                                We Transform Businesses Into Powerful Brands. Through Innovative Advertising And
+                                Branding
+                                Solutions, We Exceed Client Expectations, Fostering Lasting Partnerships Built On Trust
+                                And
+                                Results.
+                            </p>
+                        </div>
+                        <div class="icon eye-icon flex-shrink-0 md:w-[30%] lg:w-[20%]">
+                            <img loading="lazy" src="../assets/vision.webp" alt="Eye Icon"
+                                class="w-12 mx-auto md:w-full">
+                        </div>
                     </div>
-                    <h2
-                        class="text-[#FF6F00] text-2xl md:text-[2.5rem] lg:text-[3rem] xl:text-[3rem] font-bold leading-tight mb-4">
-                        VISION
-                    </h2>
-                    <p class="text-justify text-base md:text-[1rem] lg:text-[1rem] xl:text-[1rem] text-[#555] mb-6">
-                        We Transform Businesses Into Powerful Brands. Through Innovative Advertising And Branding
-                        Solutions, We
-                        Exceed Client Expectations, Fostering Lasting Partnerships Built On Trust And Results.
-                    </p>
                 </div>
             </div>
         </section>
@@ -742,11 +754,11 @@
         </div>
     </footer>
 
-    </div>
     <script src="../script/navbar.js" defer></script>
     <script src="../script/index.js" defer></script>
     <script src="https://kit.fontawesome.com/6402fb289c.js" crossorigin="anonymous" defer></script>
     <script type="module" src="../script/emailsubmission.js" defer></script>
+    <script src="../script/scroll.js"></script>
     <script type="module" src="../script/animation.js" defer></script>
 </body>
 

@@ -5,6 +5,8 @@
     overflow: hidden;
 }
 
+
+/* Hero Section Styles */
 #hero {
     display: flex;
     justify-content: space-between;
@@ -65,6 +67,68 @@
     line-height: 1.2rem;
 }
 
+/* Container for the slideshow */
+.bgImage {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Each image */
+.bgImage img {
+    position: absolute;
+    width: 100vw;
+    /* Full width of the viewport */
+    height: 100vh;
+    /* Full height of the viewport */
+    object-fit: cover;
+    /* Ensure the image covers the container while maintaining aspect ratio */
+    top: 0;
+    left: 100%;
+    /* Start off-screen to the right */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Active image is centered */
+.bgImage img.active {
+    left: 0;
+    opacity: 1;
+}
+
+/* Image moving out of view */
+.bgImage img.exit {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+/* Media query for small screens (tablets and phones) */
+@media (max-width: 768px) {
+    .bgImage {
+        height: 50vh;
+        /* Reduce height for mobile devices to make content more accessible */
+    }
+
+    /* Adjust image size on smaller screens */
+    .bgImage img {
+        width: 100vw;
+        height: 50vh;
+        /* Maintain aspect ratio while reducing height */
+    }
+}
+
+@media (max-width: 480px) {
+    .bgImage {
+        height: 40vh;
+        /* Further reduce height for very small screens */
+    }
+
+    .bgImage img {
+        height: 40vh;
+    }
+}
+
 .hero2 {
     position: relative;
     max-width: 40%;
@@ -83,17 +147,16 @@
 #about {
     width: 100%;
     height: auto;
-    margin-top: 1.5rem;
     background: #fff;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 #about .about-title h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 3rem;
+    margin: 5px;
 }
 
 #about .about-title h1 span {
@@ -127,7 +190,7 @@
 
 #about .background {
     width: 90%;
-    height: 50%;
+    height: 10rem;
     border-radius: 10rem 0 0 10rem;
     position: absolute;
     background-color: #f3f3f3;
@@ -195,7 +258,7 @@
 }
 
 #moving-div .move img {
-    height: 10vw;
+    height: 12vw;
     cursor: pointer;
     margin: 0 1.2vw;
     padding: 3rem;
@@ -261,13 +324,22 @@
     text-align: justify;
 }
 
-.service-box:hover {
+
+.service-box .service-box-info p:hover,
+.service-box-info h1 p:hover {
+    color: #fff;
+}
+
+.service-box:hover,
+.service-box-info:hover {
     background-color: #FC3A0F;
     color: #fff;
 }
 
-.service-box .service-box-info p:hover,
-.service-box-info h1 p:hover {
+.service-box:hover,
+.service-box:hover .service-box-info p,
+.service-box:hover .service-box-info h3 {
+    background-color: #FC3A0F;
     color: #fff;
 }
 
@@ -410,7 +482,7 @@
 #branding .digital-marketing-card {
     width: 150px;
     height: 150px;
-    margin-top: 90px;
+    margin-top: 55px;
 }
 
 #branding .event-card .card-content img,
@@ -464,7 +536,6 @@
 }
 
 .service {
-    padding: 1.5rem;
     background-color: #fff7f7af;
 }
 
@@ -551,7 +622,10 @@
     border-top: 1px solid #d1d1d16f;
     background-color: #f6f6f6;
     color: #000;
-    padding: 40px 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer .container {
@@ -690,7 +764,7 @@
 @media (max-width: 1377px) {
     #about .background {
         width: 100%;
-        height: 44%
+        height: 10rem;
     }
 
     #hero .hero1 h1 {
@@ -796,7 +870,6 @@
     #about .about-info .about-niceLogo {
         display: flex;
         align-items: center;
-        margin-top: -2rem;
         justify-content: center;
     }
 
@@ -833,6 +906,12 @@
     .services-section {
         flex-direction: column;
         padding: 20px;
+    }
+
+    #branding .branding-showcase-cards {
+        gap: 0px;
+        margin: 0px;
+        padding: 0px;
     }
 
     .left-column,
@@ -1065,9 +1144,6 @@
         margin-bottom: 20px;
     }
 
-    #hero {
-        margin-top: 1.5rem;
-    }
 
     .hero2 img {
 
