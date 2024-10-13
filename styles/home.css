@@ -146,7 +146,7 @@
 
 #about {
     width: 100%;
-    height: auto;
+    height: autos;
     background: #fff;
     max-width: 1200px;
     margin: 0 auto;
@@ -172,8 +172,8 @@
 
 
 #about .about-info .about-niceLogo img {
-    width: 100%;
-    height: 100%;
+    width: 11vw;
+    height: 10vh;
     z-index: 11;
     margin: 10%;
     position: relative;
@@ -204,7 +204,7 @@
     font-size: 1rem;
     text-align: justify;
     color: #000;
-    padding: 0 2rem;
+    padding: 0 4rem;
 }
 
 
