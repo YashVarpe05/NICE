@@ -6,8 +6,9 @@
 }
 
 .blog-post-full {
-    width: 70%;
-    margin-right: 30px;
+    width: 80%;
+    margin: 0 auto;
+    /* margin-right: 30px; */
 }
 
 .featured-image img {
