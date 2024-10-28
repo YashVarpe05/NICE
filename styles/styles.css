@@ -68,7 +68,7 @@ nav .navbar-container {
 }
 
 nav .navbar-container-brand img {
-    width: 7rem;
+    width: 8rem;
     object-fit: cover;
     display: flex;
     margin-right: 2rem;
@@ -107,7 +107,7 @@ nav .navbar-container-links li a.active {
 
 
 nav .navbar-container-cta button {
-    background-color: #ff7518;
+    background-color: #FC380E;
     border: none;
     border-radius: 15px;
     padding: .4rem 1rem;
@@ -364,7 +364,7 @@ nav .navbar-container-links ul li.dropdown:hover .dropdown-arrow {
 
 /* Button styling */
 .submit-btn {
-    background-color: #fe7526;
+    background-color: #FC380E;
     color: white;
     padding: 12px;
     border: none;
@@ -451,7 +451,7 @@ form {
 
     nav .bigul-button-nav {
         padding: .6rem 3.5rem;
-        background-color: #fe7526;
+        background-color: #FC380E;
         border-radius: 10px;
     }
 

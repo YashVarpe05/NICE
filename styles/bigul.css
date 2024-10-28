@@ -2,18 +2,23 @@
 .bigul-container {
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .bigul-container .bigul-headline {
     max-width: 1220px;
     margin: 0 auto;
+    padding: 0;
 }
 
 .bigul-container .bigul-headline .bigul-img img {
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
-    transform: translateX(30%);
+    transform: translateX(50%);
+    margin: 0;
+    padding: 0;
 }
 
 .bigul-container .bigul-headline .bigul-info {
@@ -21,6 +26,7 @@
     text-align: justify;
     transform: translateX(15%);
     padding: 0;
+    margin-top: -5rem;
 }
 
 .bigul-container .bigul-headline .bigul-info p {
@@ -265,6 +271,10 @@ button.submit-btn:hover {
         line-height: 1.2;
     }
 
+    .bigul-container .bigul-headline .bigul-info {
+        margin-top: -2rem;
+    }
+
     .cards .card-headline h1 {
         font-size: 2rem;
         font-weight: 700;
@@ -329,7 +339,7 @@ button.submit-btn:hover {
         height: 100%;
         object-fit: cover;
         margin: 0 auto;
-        transform: translateX(0%);
+        transform: translateX(25%);
     }
 
     .bigul-container .bigul-headline .bigul-info {

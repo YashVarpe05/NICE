@@ -71,7 +71,7 @@
 .bgImage {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
 }
 
@@ -83,7 +83,6 @@
     height: 100vh;
     /* Full height of the viewport */
     object-fit: cover;
-    /* Ensure the image covers the container while maintaining aspect ratio */
     top: 0;
     left: 100%;
     /* Start off-screen to the right */
@@ -252,7 +251,7 @@
 #moving-div .move {
     display: inline-block;
     animation-name: mobe;
-    animation-duration: 20s;
+    animation-duration: 70s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -818,6 +817,12 @@
         height: 100px;
     }
 
+    #branding .branding-showcase .branding-showcase-cards .event-card img,
+    #branding .branding-showcase .branding-showcase-cards .digital-marketing-card img {
+        width: 120px;
+        height: 120px;
+    }
+
     #branding .branding-showcase .branding-showcase-cards .event-management,
     #branding .branding-showcase .branding-showcase-cards .digital-marketing {
         width: 80%;
@@ -887,6 +892,8 @@
     #about .about-info .about-niceLogo img {
         width: 40%;
         height: 40%;
+        padding: 0;
+        margin: 0;
     }
 
     #about .about-info .background {

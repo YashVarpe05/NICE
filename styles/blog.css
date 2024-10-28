@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    /* transform: translateX(10%); */
     margin: 28px 25px;
 }
 
@@ -10,6 +11,12 @@
     margin: 20px 0;
     color: #000;
     text-transform: uppercase;
+}
+
+.blog {
+    width: 100%;
+    max-width: 1360px;
+    margin: 5rem auto;
 }
 
 .blog-post {
