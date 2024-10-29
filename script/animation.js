@@ -127,32 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 gsap.registerPlugin(ScrollTrigger);
 
-// Target elements and animate them
-gsap.from(".relative.overflow-hidden", {
-	opacity: 0,
-	y: 30,
-	duration: 1,
-	scrollTrigger: {
-		trigger: ".relative.overflow-hidden",
-		start: "top 80%", // Trigger the animation when the top of the element reaches 80% from the top of the viewport
-		end: "top 30%", // End animation when the top of the element reaches 30% from the top of the viewport
-		scrub: true, // Smooth animation based on scroll position
-		markers: false, // Set to true to see scroll markers
-	},
-});
-
-gsap.from(".text-gray-900", {
-	opacity: 0,
-	y: 50,
-	duration: 1,
-	scrollTrigger: {
-		trigger: ".text-gray-900",
-		start: "top 80%",
-		end: "top 30%",
-		scrub: true,
-		markers: false,
-	},
-});
 gsap.registerPlugin(ScrollTrigger);
 window.addEventListener("load", () => {
 	gsap.from(".bigul-img img", {
