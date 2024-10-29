@@ -258,9 +258,14 @@ nav .navbar-container-links ul li.dropdown:hover .dropdown-arrow {
 }
 
 .navbar-mobile-container ul li a {
-    color: #555;
+    color: #000;
     font-size: 1rem;
     text-decoration: none;
+}
+
+.navbar-mobile-container ul li .bigul-button-nav {
+    color: #fff;
+    font-weight: 600;
 }
 
 .whatsapp-button {
@@ -453,6 +458,7 @@ form {
         padding: .6rem 3.5rem;
         background-color: #FC380E;
         border-radius: 10px;
+        color: #fff;
     }
 
     .toggle .bar1 {

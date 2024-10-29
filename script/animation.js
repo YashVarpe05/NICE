@@ -8,20 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		duration: 1.5,
 		scrollTrigger: {
 			trigger: "#about",
-			start: "top 80%", // Adjust this value to control when the animation triggers
+			start: "top 90%", // Adjust this value to control when the animation triggers
 			end: "bottom 20%",
-			toggleActions: "play none none none",
-		},
-	});
-
-	gsap.from("#about .about-title h1", {
-		opacity: 0,
-		y: 20,
-		duration: 1,
-		delay: 0.3,
-		scrollTrigger: {
-			trigger: "#about",
-			start: "top 75%",
 			toggleActions: "play none none none",
 		},
 	});
@@ -230,19 +218,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		let nextIndex = (currentIndex + 1) % images.length;
 		const nextImage = images[nextIndex];
 
-		// Set the current image to exit and remove the active class
-		currentImage.classList.remove("active");
-		currentImage.classList.add("exit");
-
-		// Add the active class to the next image
-		nextImage.classList.add("active");
-
-		// After the transition, remove the exit class from the previous image
-		setTimeout(() => {
-			currentImage.classList.remove("exit");
-		}, 1000); // Match this with the CSS transition duration
-
-		// Update the index
 		currentIndex = nextIndex;
 	}
 

@@ -338,7 +338,7 @@
 .service-box:hover,
 .service-box:hover .service-box-info p,
 .service-box:hover .service-box-info h3 {
-    background-color: #FC3A0F;
+    background-color: #FC380E;
     color: #fff;
 }
 
@@ -544,7 +544,7 @@
 }
 
 .service .service-headline h1 {
-    color: #ff4c24e5;
+    color: #FC380E;
 }
 
 .services-section {
@@ -595,7 +595,7 @@
 }
 
 .contact-btn {
-    background-color: #f97316;
+    background-color: #FC380E;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -728,7 +728,7 @@
     text-align: center;
     border-top: 1px solid #bdbdbdc2;
     margin-top: 20px;
-    color: #aaa;
+    color: #000;
     width: 80%;
     /* Adjust the percentage to your preference */
     margin-left: auto;
@@ -976,8 +976,14 @@
         margin-left: 4.5rem
     }
 
-    .footer-columns {
+    .footer-column {
         flex-direction: column;
+    }
+
+    .footer .container {
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
     }
 
     .footer-column {

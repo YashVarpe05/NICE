@@ -94,7 +94,7 @@ wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
 const config = {
-	documentId: "98836a70-e6a4-4a54-a675-df26e678545f",
+	documentId: "fce2f07c-2937-439f-b3e1-0551b19777eb",
 	darkMode: false,
 };
 CloudPDF(config, document.getElementById("viewer")).then((instance) => {});
