@@ -102,24 +102,46 @@
     opacity: 0;
 }
 
-/* Media query for small screens (tablets and phones) */
-@media (max-width: 768px) {
+/* Responsive adjustments */
+@media (max-width: 1024px) {
     .bgImage {
-        height: 50vh;
-        /* Reduce height for mobile devices to make content more accessible */
+        height: 70vh;
+        /* Adjust height for smaller laptops */
     }
 
-    /* Adjust image size on smaller screens */
     .bgImage img {
-        width: 100vw;
-        height: 50vh;
-        /* Maintain aspect ratio while reducing height */
+        height: 70vh;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .bgImage {
+        height: 60vh;
+        object-fit: inherit;
+        /* Reduce height for tablets */
+    }
+
+    .bgImage img {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .bgImage {
+        height: 50vh;
+        object-fit: inherit;
+        /* Adjust for mobile devices */
+    }
+
+    .bgImage img {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 400px) {
     .bgImage {
         height: 40vh;
+        object-fit: inherit;
         /* Further reduce height for very small screens */
     }
 
@@ -188,13 +210,15 @@
 
 
 #about .background {
-    width: 90%;
-    height: 10rem;
-    border-radius: 10rem 0 0 10rem;
     position: absolute;
+    width: 100%;
+    height: 13rem;
+    top: 23%;
+    left: 74px;
+    border-radius: 10rem 0 0 10rem;
     background-color: #f3f3f3;
     max-width: 1220px;
-    max-height: fit-content;
+    overflow: hidden;
 }
 
 
@@ -763,7 +787,7 @@
 @media (max-width: 1377px) {
     #about .background {
         width: 100%;
-        height: 10rem;
+        height: 13rem;
     }
 
     #hero .hero1 h1 {

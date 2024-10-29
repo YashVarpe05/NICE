@@ -104,61 +104,61 @@ const config = {
 };
 CloudPDF(config, document.getElementById("viewer")).then((instance) => {});
 
-// Handle Modal Display
-const modal = document.getElementById("contactFormModal");
-const btn = document.getElementById("downloadBtn");
-// const span = document.getElementsByClassName("close-btn")[0];
+/// Handle Modal Display
+document.addEventListener("DOMContentLoaded", function () {
+	const modal = document.getElementById("contactFormModal");
+	const btn = document.getElementById("downloadBtn");
+	const closeBtn = document.querySelector(".close-btn");
 
-btn.onclick = function () {
-	modal.style.display = "block";
-};
+	// Open modal on button click
+	btn.onclick = function () {
+		modal.style.display = "block";
+		document.body.style.overflow = "hidden"; // Prevent background scroll
+	};
 
-const modal1 = document.querySelector(".modal-content");
-const closeBtn = document.querySelector(".close-btn");
-
-// Function to close the modal
-closeBtn.addEventListener("click", function () {
-	modal1.style.display = "none";
-});
-
-// Optionally, you can also close the modal if the user clicks outside of it
-window.addEventListener("click", function (event) {
-	if (event.target === modal) {
-		modal1.style.display = "none";
-	}
-});
-
-window.onclick = function (event) {
-	if (event.target == modal) {
+	// Close modal on close button click
+	closeBtn.onclick = function () {
 		modal.style.display = "none";
-	}
-};
+		document.body.style.overflow = "auto"; // Restore background scroll
+	};
 
-// Handle Form Submission
-document
-	.getElementById("contactForm")
-	.addEventListener("submit", function (event) {
-		event.preventDefault(); // Prevent the default form submission
-
-		const form = event.target;
-		const formData = new FormData(form);
-
-		fetch(form.action, {
-			method: form.method,
-			body: formData,
-		})
-			.then((response) => response.json())
-			.then((data) => {
-				if (data.result === "success") {
-					alert("Form submitted successfully!");
-					form.reset(); // Optionally reset the form
-					window.location.href =
-						"../assets/Bigul Election Campagin - Nice Art Media 2024 (1).pdf";
-				} else {
-					alert("There was an error submitting the form: " + data.error);
-				}
-			})
-			.catch((error) => {
-				alert("An error occurred: " + error.message);
-			});
+	// Close modal when clicking outside the modal content
+	window.addEventListener("click", function (event) {
+		if (event.target === modal) {
+			modal.style.display = "none";
+			document.body.style.overflow = "auto"; // Restore background scroll
+		}
 	});
+
+	// Handle Form Submission
+	document
+		.getElementById("contactForm")
+		.addEventListener("submit", function (event) {
+			event.preventDefault(); // Prevent the default form submission
+
+			const form = event.target;
+			const formData = new FormData(form);
+
+			fetch(form.action, {
+				method: form.method,
+				body: formData,
+			})
+				.then((response) => response.json())
+				.then((data) => {
+					if (data.result === "success") {
+						alert("Form submitted successfully!");
+						form.reset(); // Optionally reset the form
+						modal.style.display = "none"; // Close the modal after submission
+						document.body.style.overflow = "auto"; // Restore background scroll
+						// Redirect to PDF
+						window.location.href =
+							"../assets/Bigul Election Campaign - Nice Art Media 2024 (1).pdf";
+					} else {
+						alert("There was an error submitting the form: " + data.error);
+					}
+				})
+				.catch((error) => {
+					alert("An error occurred: " + error.message);
+				});
+		});
+});
