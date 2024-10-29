@@ -80,9 +80,14 @@ const infiniteScroll = () => {
 };
 
 const autoPlay = () => {
-	if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
-	// Autoplay the carousel after every 2500 ms
-	timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2000);
+	if (window.innerWidth < 800 || !isAutoPlay) return;
+
+	// Set a delay for the first slide
+	setTimeout(() => {
+		timeoutId = setInterval(() => {
+			carousel.scrollLeft += firstCardWidth;
+		}, 7000); // Adjust to a longer interval (e.g., 7000ms) for a slower autoplay
+	}, 5000); // Delay the first slide by 5000ms
 };
 autoPlay();
 
